@@ -1,6 +1,6 @@
 import { Type } from '@sinclair/typebox'
 
-import { Bounds } from './utils'
+import { Bounds } from './utils.js'
 
 const { Object, Optional, String } = Type
 

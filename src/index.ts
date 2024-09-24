@@ -1,5 +1,5 @@
 import type { Static } from '@sinclair/typebox'
-import * as schemas from './schemas'
+import * as schemas from './schemas/index.js'
 
 export { schemas }
 
