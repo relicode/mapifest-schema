@@ -7,8 +7,7 @@
     "build": "rm -r dist 2>/dev/null; tsc",
     "dev": "npm run build -- -w",
     "lint": "eslint .",
-    "precommit": "lint",
-    "postinstall": "npm run build"
+    "precommit": "lint"
   },
   "dependencies": {
     "@sinclair/typebox": "^0.33.12"
