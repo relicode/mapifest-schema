@@ -8,7 +8,7 @@
     "dev": "npm run build -- -w",
     "lint": "eslint .",
     "test": "tsx test",
-    "precommit": "npm run build && npm run lint && npm run test"
+    "preversion": "npm run build && npm run lint && npm run test && npm pack"
   },
   "dependencies": {
     "@sinclair/typebox": "^0.33.12"
