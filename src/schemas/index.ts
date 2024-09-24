@@ -1,1 +1,2 @@
-export * from './mapifest-event'
+export * from './mapifest-event.js'
+export * from './utils.js'
