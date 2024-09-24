@@ -2,15 +2,16 @@
   "name": "mapifest-schema",
   "main": "dist/index.js",
   "type": "module",
+  "version": "0.0.1",
   "scripts": {
     "build": "rm -r dist 2>/dev/null; tsc",
     "dev": "npm run build -- -w",
     "lint": "eslint .",
-    "precommit": "lint"
+    "precommit": "lint",
+    "postinstall": "npm run build"
   },
   "dependencies": {
-    "@sinclair/typebox": "^0.33.12",
-    "ajv": "^8.17.1"
+    "@sinclair/typebox": "^0.33.12"
   },
   "devDependencies": {
     "@types/node": "^22.5.5",
