@@ -1,0 +1,27 @@
+{
+  "importStringConfiguration": {
+    "trailingComma": "multiLine",
+    "tabSize": 2,
+    "maximumNumberOfImportExpressionsPerLine": {
+      "count": 50
+    },
+    "hasSemicolon": false
+  },
+  "sortConfiguration": {
+    "customOrderingRules": {
+      "defaultNumberOfEmptyLinesAfterGroup": 1,
+      "rules": [
+        {
+          "type": "path",
+          "regex": "^$",
+          "orderLevel": 10
+        },
+        {
+          "type": "path",
+          "regex": "^(@/|./)",
+          "orderLevel": 30
+        }
+      ]
+    }
+  }
+}
