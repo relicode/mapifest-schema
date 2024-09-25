@@ -1,34 +1,12 @@
-import Ajv from 'ajv'
-import addFormats from 'ajv-formats'
 import assert from 'node:assert'
 
-import { DateTime, MapifestEvent } from './src/schemas'
+import { mapifestEvent } from './src/schemas'
+import { datetime } from './src/utils'
 
-const ajv = addFormats(new Ajv({}), [
-  'date-time',
-  'time',
-  'date',
-  'email',
-  'hostname',
-  'ipv4',
-  'ipv6',
-  'uri',
-  'uri-reference',
-  'uuid',
-  'uri-template',
-  'json-pointer',
-  'relative-json-pointer',
-  'regex',
-])
-
-const dateTime = ajv.compile(DateTime)
-
-assert(!dateTime('sdfsgsd'))
-assert(!dateTime('2024-09-24T08:50:07'))
-assert(dateTime('2024-09-24T08:50:07.887Z'))
-assert(dateTime('2024-09-24T08:50:07Z'))
-
-const mapifestEvent = ajv.compile(MapifestEvent)
+assert.rejects(datetime.validate('sdfsgsd'))
+assert.rejects(datetime.validate('2024-09-24T08:50:07'))
+assert.doesNotReject(datetime.validate('2024-09-24T08:50:07.887Z'))
+assert.doesNotReject(datetime.validate('2024-09-24T08:50:07Z'))
 
 const LOREM_IPSUM = `
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula ex at vulputate maximus. Nunc vitae orci sit amet metus elementum convallis sollicitudin id dolor. Praesent euismod nisl at tortor pharetra, in lobortis ipsum aliquam. Etiam eget lectus porttitor, mattis risus non, sollicitudin velit. Donec sit amet ipsum lectus. Aenean in ligula nulla. Integer in purus mollis leo vehicula vehicula vel eget lorem. Suspendisse eu est consequat, fringilla mi condimentum, lacinia diam.
@@ -155,7 +133,7 @@ const validEvent = {
   id: 'ed63396f-9925-4e98-9b7d-96e7d62297a8',
   name: 'Full long absolute name',
   shortName: 'Short name',
-  time: ['2024-09-24T09:30:03.395Z', '2024-09-28T09:30:03.395Z'],
+  fromTo: ['2024-09-24T09:30:03.395Z', '2024-09-28T09:30:03.395Z'],
   adminIds: ['ddbfa239-326c-4a43-9231-7846e74a03e7', '275ef75f-d342-4919-a8d3-2470c987cf91'],
   description: LOREM_IPSUM,
   bounds: [
@@ -166,12 +144,9 @@ const validEvent = {
   tiles: TILES,
 }
 
-assert(mapifestEvent(validEvent))
+assert.doesNotReject(mapifestEvent.validate(validEvent))
 
 const invalidEvent = structuredClone(validEvent)
 invalidEvent.id = invalidEvent.id.replace(/-/gi, '')
 
-mapifestEvent(invalidEvent)
-assert.equal(mapifestEvent.errors![0].message, 'must match format "uuid"')
-
-console.log(JSON.stringify(validEvent, null, 2))
+assert.rejects(mapifestEvent.validate(invalidEvent))

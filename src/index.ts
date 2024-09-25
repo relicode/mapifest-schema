@@ -1,7 +1,6 @@
-import type { Static } from '@sinclair/typebox'
-import * as schemas from './schemas/index.js'
+import { mapifestEvent } from './schemas.js'
 
-type SchemaTypes = typeof schemas
+import type { InferType } from 'yup'
 
-export { schemas }
-export type Types = { [K in keyof SchemaTypes]: Static<SchemaTypes[K]> }
+export { mapifestEvent }
+export type MapifestEvent = InferType<typeof mapifestEvent>
