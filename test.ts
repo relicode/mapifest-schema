@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 
 import { mapifestEvent } from './src/schemas'
-import { datetime } from './src/utility-types'
+import { datetime } from './src/utility-schemas'
 import { baseVE } from './src/utils'
 import { invalidEvents, validEvent } from './test-data'
 

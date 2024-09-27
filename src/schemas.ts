@@ -1,7 +1,7 @@
 export * from './schemas.js'
 import { array, object, string } from 'yup'
 
-import { coordinates, bounds, fromTo, id, tile, hero, objectWithId } from './utility-types.js'
+import { coordinates, bounds, fromTo, id, tile, hero, objectWithId } from './utility-schemas.js'
 
 export const poi = object({
   coordinates: coordinates.required(),
