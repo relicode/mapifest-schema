@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "test": "tsx test",
     "preversion": "npm run build && npm run lint && npm run test",
-    "postversion": "npm pack"
+    "postversion": "npm pack",
+    "postinstall": "if [ ! -h .git/hooks/pre-commit ]; then ln -vs ../../git-hooks/pre-commit .git/hooks/pre-commit; fi"
   },
   "dependencies": {
     "@sinclair/typebox": "^0.33.12",

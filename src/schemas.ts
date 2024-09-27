@@ -1,16 +1,23 @@
 export * from './schemas.js'
 import { array, object, string } from 'yup'
 
-import { bounds, fromTo, point, tile } from './utils.js'
+import { coordinates, bounds, fromTo, id, tile, hero, objectWithId } from './utility-types.js'
 
-export const mapifestEvent = object().shape({
-  id: string().required().uuid(),
-  description: string().min(0).max(4096),
-  name: string().required().min(3).max(128),
-  shortName: string().min(0).max(32),
+export const poi = object({
+  coordinates: coordinates.required(),
+  title: string().min(1).max(32).required(),
+  description: string().max(16384),
+  hero: hero.notRequired(),
+}).concat(objectWithId)
+
+export const mapifestEvent = object({
+  description: string().max(4096),
+  name: string().min(3).max(128).required(),
+  shortName: string().max(32),
   bounds,
-  center: point.notRequired(),
-  fromTo: fromTo,
-  adminIds: array().required().of(string().required().uuid()).min(1),
-  tiles: array().required().of(tile),
-})
+  center: coordinates,
+  fromTo,
+  adminIds: array().of(id).min(1).required(),
+  tiles: array().of(tile).required(),
+  pois: array().of(poi).required(),
+}).concat(objectWithId)
