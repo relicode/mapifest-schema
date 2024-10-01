@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 
 import { mapifestEvent } from './src/schemas'
-import { datetime } from './src/utility-schemas'
+import { color, datetime } from './src/utility-schemas'
 import { baseVE } from './src/utils'
 import { invalidEvents, validEvent } from './test-data'
 
@@ -27,3 +27,11 @@ assert.rejects(mapifestEvent.validate(invalidEvents.id), {
 assert.doesNotReject(datetime.validate('2024-09-24T08:50:07.887Z'))
 assert.doesNotReject(datetime.validate('2024-09-24T08:50:07Z'))
 assert.doesNotReject(mapifestEvent.validate(validEvent))
+
+for (const v of ['#fff', 'rgba(255, 255, 255)', 'hsl(123deg, 100%, 0%)', 'pink', 'gray', 'grey', '#FFF', 'grAy'])
+  assert.doesNotReject(color.validate(v))
+
+for (const v of ['gray ', 'rgba(255, 255, 256)'])
+  assert.rejects(color.validate(v), {
+    errors: ['this is not a valid color'],
+  })
