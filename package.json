@@ -6,10 +6,11 @@
   "scripts": {
     "build": "rm -r dist 2>/dev/null; tsc",
     "dev": "npm run build -- -w",
+    "describe": "tsx describe.ts > mapifest-schema-description.txt",
     "initialize": "if [ ! -h .git/hooks/pre-commit ]; then ln -vs ../../git-hooks/pre-commit .git/hooks/pre-commit; fi",
     "lint": "eslint .",
-    "postversion": "npm pack && mv -v mapifest-schema-*.tgz /tmp",
-    "preversion": "npm run build && npm run lint && npm run test",
+    "postversion": "npm pack && mv -v mapifest-schema-*.tgz mapifest-schema-description.txt /tmp",
+    "preversion": "npm run build && npm run lint && npm run test && npm run describe",
     "test": "tsx test"
   },
   "dependencies": {

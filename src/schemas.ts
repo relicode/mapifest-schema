@@ -3,11 +3,13 @@ import { array, object, string } from 'yup'
 import { coordinates, bounds, fromTo, id, tile, hero, objectWithId, color } from './utility-schemas.js'
 
 export const poi = object({
-  coordinates: coordinates,
+  coordinates: coordinates.default([0, 0]),
   title: string().min(1).max(32).required(),
   description: string().max(16384),
   hero: hero.optional(),
-}).concat(objectWithId)
+})
+  .concat(objectWithId)
+  .required()
 
 export const mapifestEvent = object({
   adminIds: array().of(id).min(1).required(),
@@ -16,15 +18,17 @@ export const mapifestEvent = object({
     [0, 0],
   ]),
   center: coordinates.default([0, 0]),
-  description: string().max(4096),
+  description: string().max(16384),
   fromTo,
   name: string().min(3).max(128).required(),
-  pois: array().of(poi).required(),
+  pois: array().of(poi).default([]),
   shortName: string().max(32),
   themeColor: color.default('white'),
-  tiles: array().of(tile).required(),
-  tileSchema: string().default('https://tile.openstreetmap.org/{z}/{x}/{y}.png'),
+  tiles: array().of(tile).default([]),
+  tileSchema: string().default('https://tiles-{s}.sallamois.online/{z}/{x}/{y}.png'),
   attribution: string().default(
     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   ),
-}).concat(objectWithId)
+})
+  .concat(objectWithId)
+  .required()

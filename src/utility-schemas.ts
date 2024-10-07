@@ -9,9 +9,18 @@ export const coordinates = tuple([
 
 export const bounds = tuple([coordinates.label('first corner'), coordinates.label('second corner')]).required()
 
-export const datetime = string().datetime().required()
+export const datetime = string()
+  .datetime()
+  .default(() => new Date().toISOString())
 
-export const fromTo = tuple([datetime.label('from'), datetime.label('to')]).required()
+export const fromTo = tuple([datetime.label('from'), datetime.label('to')])
+  .default(() => {
+    const startDate = new Date().toISOString()
+    const endDate = new Date(startDate)
+    endDate.setDate(endDate.getDate() + 3) // Three days from now
+    return [startDate, endDate.toISOString()]
+  })
+  .required()
 
 export const tile = object({
   x: number().integer().positive().required(),
@@ -19,15 +28,17 @@ export const tile = object({
   z: number().integer().positive().required(),
 }).required()
 
-export const id = string().uuid().required()
+export const id = string()
+  .uuid()
+  .default(() => crypto.randomUUID())
 
 export const objectWithId = object({
   id,
-}).required()
+})
 
 export const hero = object({
-  type: string().oneOf(HERO_TYPES).required(),
-  url: string().url().required(),
+  type: string().oneOf(HERO_TYPES).default('IMAGE'),
+  url: string().url().default('https://placehold.co/800x600.png'),
 }).required()
 
 const colorLiterals = [
