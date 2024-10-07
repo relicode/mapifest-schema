@@ -130,4 +130,4 @@ dist
 .pnp.*
 
 /*.tar.gz
-/mapifest-schema-description.txt
+/mapifest-schema-description.md
