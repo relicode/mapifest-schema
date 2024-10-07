@@ -14,8 +14,8 @@
     "themeColor": "white",
     "pois": [],
     "fromTo": [
-      "2024-10-07T13:29:33.075Z",
-      "2024-10-10T13:29:33.075Z"
+      "2024-10-07T13:55:18.083Z",
+      "2024-10-10T13:55:18.083Z"
     ],
     "center": [
       0,
@@ -31,7 +31,7 @@
         0
       ]
     ],
-    "id": "74c5c564-735b-41db-8e99-794360c04a9b"
+    "id": "1a1d7392-953f-4533-a5ee-73a47a7d3a3f"
   },
   "type": "object",
   "oneOf": [],
@@ -39,9 +39,9 @@
   "tests": [],
   "fields": {
     "id": {
-      "optional": true,
+      "optional": false,
       "nullable": false,
-      "default": "0a247ea5-ea1e-4484-933d-64877a84b8f0",
+      "default": "bcd86260-018a-43ca-b40c-d45d347d020d",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -51,6 +51,9 @@
           "params": {
             "regex": {}
           }
+        },
+        {
+          "name": "required"
         }
       ]
     },
@@ -69,9 +72,9 @@
         }
       ],
       "innerType": {
-        "optional": true,
+        "optional": false,
         "nullable": false,
-        "default": "5a378269-e1e0-4a2d-935c-fba5ea85c300",
+        "default": "24658836-6977-477e-a171-87df3331e2ea",
         "type": "string",
         "oneOf": [],
         "notOneOf": [],
@@ -81,6 +84,9 @@
             "params": {
               "regex": {}
             }
+          },
+          {
+            "name": "required"
           }
         ]
       }
@@ -292,8 +298,8 @@
       "optional": false,
       "nullable": false,
       "default": [
-        "2024-10-07T13:29:33.076Z",
-        "2024-10-10T13:29:33.076Z"
+        "2024-10-07T13:55:18.084Z",
+        "2024-10-10T13:55:18.084Z"
       ],
       "type": "tuple",
       "oneOf": [],
@@ -304,7 +310,7 @@
           "label": "from",
           "optional": true,
           "nullable": false,
-          "default": "2024-10-07T13:29:33.076Z",
+          "default": "2024-10-07T13:55:18.084Z",
           "type": "string",
           "oneOf": [],
           "notOneOf": [],
@@ -329,7 +335,7 @@
           "label": "to",
           "optional": true,
           "nullable": false,
-          "default": "2024-10-07T13:29:33.076Z",
+          "default": "2024-10-07T13:55:18.084Z",
           "type": "string",
           "oneOf": [],
           "notOneOf": [],
@@ -377,7 +383,7 @@
       ]
     },
     "pois": {
-      "optional": true,
+      "optional": false,
       "nullable": false,
       "default": [],
       "type": "array",
@@ -396,7 +402,7 @@
             0,
             0
           ],
-          "id": "e5784a6d-3da6-451c-a8e2-8e3a64642820"
+          "id": "30e0527f-282c-42df-8fff-8ed104363ebd"
         },
         "type": "object",
         "oneOf": [],
@@ -404,9 +410,9 @@
         "tests": [],
         "fields": {
           "id": {
-            "optional": true,
+            "optional": false,
             "nullable": false,
-            "default": "0d587133-0e9c-42b5-9afa-385003948fc4",
+            "default": "50901d90-f414-401d-8052-192a20473d54",
             "type": "string",
             "oneOf": [],
             "notOneOf": [],
@@ -416,6 +422,9 @@
                 "params": {
                   "regex": {}
                 }
+              },
+              {
+                "name": "required"
               }
             ]
           },
@@ -502,7 +511,7 @@
             ]
           },
           "description": {
-            "optional": true,
+            "optional": false,
             "nullable": false,
             "type": "string",
             "oneOf": [],
@@ -513,6 +522,9 @@
                 "params": {
                   "max": 16384
                 }
+              },
+              {
+                "name": "required"
               }
             ]
           },
@@ -529,7 +541,7 @@
             "tests": [],
             "fields": {
               "type": {
-                "optional": true,
+                "optional": false,
                 "nullable": false,
                 "default": "IMAGE",
                 "type": "string",
@@ -538,10 +550,14 @@
                   "YOUTUBE"
                 ],
                 "notOneOf": [],
-                "tests": []
+                "tests": [
+                  {
+                    "name": "required"
+                  }
+                ]
               },
               "url": {
-                "optional": true,
+                "optional": false,
                 "nullable": false,
                 "default": "https://placehold.co/800x600.png",
                 "type": "string",
@@ -553,6 +569,9 @@
                     "params": {
                       "regex": {}
                     }
+                  },
+                  {
+                    "name": "required"
                   }
                 ]
               }
@@ -577,7 +596,7 @@
       ]
     },
     "themeColor": {
-      "optional": true,
+      "optional": false,
       "nullable": false,
       "default": "white",
       "type": "string",
@@ -586,11 +605,14 @@
       "tests": [
         {
           "name": "is-color"
+        },
+        {
+          "name": "required"
         }
       ]
     },
     "tiles": {
-      "optional": true,
+      "optional": false,
       "nullable": false,
       "default": [],
       "type": "array",
@@ -600,13 +622,13 @@
       "innerType": {
         "optional": false,
         "nullable": false,
-        "default": {},
-        "type": "object",
+        "type": "tuple",
         "oneOf": [],
         "notOneOf": [],
         "tests": [],
-        "fields": {
-          "x": {
+        "innerType": [
+          {
+            "label": "x",
             "optional": false,
             "nullable": false,
             "type": "number",
@@ -624,7 +646,8 @@
               }
             ]
           },
-          "y": {
+          {
+            "label": "y",
             "optional": false,
             "nullable": false,
             "type": "number",
@@ -642,7 +665,8 @@
               }
             ]
           },
-          "z": {
+          {
+            "label": "z",
             "optional": false,
             "nullable": false,
             "type": "number",
@@ -660,26 +684,34 @@
               }
             ]
           }
-        }
+        ]
       }
     },
     "tileSchema": {
-      "optional": true,
+      "optional": false,
       "nullable": false,
       "default": "https://tiles-{s}.sallamois.online/{z}/{x}/{y}.png",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
-      "tests": []
+      "tests": [
+        {
+          "name": "required"
+        }
+      ]
     },
     "attribution": {
-      "optional": true,
+      "optional": false,
       "nullable": false,
       "default": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
-      "tests": []
+      "tests": [
+        {
+          "name": "required"
+        }
+      ]
     }
   }
 }
@@ -699,7 +731,7 @@
       0,
       0
     ],
-    "id": "6499b937-a56f-42d9-9665-56579e79753f"
+    "id": "4763db3f-61f8-4303-89e1-839235881b75"
   },
   "type": "object",
   "oneOf": [],
@@ -707,9 +739,9 @@
   "tests": [],
   "fields": {
     "id": {
-      "optional": true,
+      "optional": false,
       "nullable": false,
-      "default": "0efa619d-0079-4ab3-9313-f0d95cd72e8a",
+      "default": "e2de1c3b-c907-4c15-b322-1ab9b5204203",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -719,6 +751,9 @@
           "params": {
             "regex": {}
           }
+        },
+        {
+          "name": "required"
         }
       ]
     },
@@ -805,7 +840,7 @@
       ]
     },
     "description": {
-      "optional": true,
+      "optional": false,
       "nullable": false,
       "type": "string",
       "oneOf": [],
@@ -816,6 +851,9 @@
           "params": {
             "max": 16384
           }
+        },
+        {
+          "name": "required"
         }
       ]
     },
@@ -832,7 +870,7 @@
       "tests": [],
       "fields": {
         "type": {
-          "optional": true,
+          "optional": false,
           "nullable": false,
           "default": "IMAGE",
           "type": "string",
@@ -841,10 +879,14 @@
             "YOUTUBE"
           ],
           "notOneOf": [],
-          "tests": []
+          "tests": [
+            {
+              "name": "required"
+            }
+          ]
         },
         "url": {
-          "optional": true,
+          "optional": false,
           "nullable": false,
           "default": "https://placehold.co/800x600.png",
           "type": "string",
@@ -856,6 +898,9 @@
               "params": {
                 "regex": {}
               }
+            },
+            {
+              "name": "required"
             }
           ]
         }
@@ -994,14 +1039,18 @@
 ### color
 ```json
 {
-  "optional": true,
+  "optional": false,
   "nullable": false,
+  "default": "white",
   "type": "string",
   "oneOf": [],
   "notOneOf": [],
   "tests": [
     {
       "name": "is-color"
+    },
+    {
+      "name": "required"
     }
   ]
 }
@@ -1070,7 +1119,7 @@
 {
   "optional": true,
   "nullable": false,
-  "default": "2024-10-07T13:29:33.078Z",
+  "default": "2024-10-07T13:55:18.085Z",
   "type": "string",
   "oneOf": [],
   "notOneOf": [],
@@ -1099,8 +1148,8 @@
   "optional": false,
   "nullable": false,
   "default": [
-    "2024-10-07T13:29:33.078Z",
-    "2024-10-10T13:29:33.078Z"
+    "2024-10-07T13:55:18.086Z",
+    "2024-10-10T13:55:18.086Z"
   ],
   "type": "tuple",
   "oneOf": [],
@@ -1111,7 +1160,7 @@
       "label": "from",
       "optional": true,
       "nullable": false,
-      "default": "2024-10-07T13:29:33.078Z",
+      "default": "2024-10-07T13:55:18.086Z",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -1136,7 +1185,7 @@
       "label": "to",
       "optional": true,
       "nullable": false,
-      "default": "2024-10-07T13:29:33.078Z",
+      "default": "2024-10-07T13:55:18.086Z",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -1176,7 +1225,7 @@
   "tests": [],
   "fields": {
     "type": {
-      "optional": true,
+      "optional": false,
       "nullable": false,
       "default": "IMAGE",
       "type": "string",
@@ -1185,10 +1234,14 @@
         "YOUTUBE"
       ],
       "notOneOf": [],
-      "tests": []
+      "tests": [
+        {
+          "name": "required"
+        }
+      ]
     },
     "url": {
-      "optional": true,
+      "optional": false,
       "nullable": false,
       "default": "https://placehold.co/800x600.png",
       "type": "string",
@@ -1200,6 +1253,9 @@
           "params": {
             "regex": {}
           }
+        },
+        {
+          "name": "required"
         }
       ]
     }
@@ -1210,9 +1266,9 @@
 ### id
 ```json
 {
-  "optional": true,
+  "optional": false,
   "nullable": false,
-  "default": "4b768325-cea8-4bd1-8be0-5b15443e5eff",
+  "default": "d99a27eb-5bd3-4bfa-8f84-08b6b97b9fb8",
   "type": "string",
   "oneOf": [],
   "notOneOf": [],
@@ -1222,6 +1278,9 @@
       "params": {
         "regex": {}
       }
+    },
+    {
+      "name": "required"
     }
   ]
 }
@@ -1230,10 +1289,10 @@
 ### objectWithId
 ```json
 {
-  "optional": true,
+  "optional": false,
   "nullable": false,
   "default": {
-    "id": "7fa0ef8a-14ef-4997-9f23-9279519a2c51"
+    "id": "946149ca-f112-42a5-8db9-7fc7714092ec"
   },
   "type": "object",
   "oneOf": [],
@@ -1241,9 +1300,9 @@
   "tests": [],
   "fields": {
     "id": {
-      "optional": true,
+      "optional": false,
       "nullable": false,
-      "default": "0042634e-1ea6-46d3-85bd-c6c0a5d3abec",
+      "default": "5c4fe974-f154-4ca8-a214-f5023780521e",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -1253,6 +1312,9 @@
           "params": {
             "regex": {}
           }
+        },
+        {
+          "name": "required"
         }
       ]
     }
@@ -1265,13 +1327,13 @@
 {
   "optional": false,
   "nullable": false,
-  "default": {},
-  "type": "object",
+  "type": "tuple",
   "oneOf": [],
   "notOneOf": [],
   "tests": [],
-  "fields": {
-    "x": {
+  "innerType": [
+    {
+      "label": "x",
       "optional": false,
       "nullable": false,
       "type": "number",
@@ -1289,7 +1351,8 @@
         }
       ]
     },
-    "y": {
+    {
+      "label": "y",
       "optional": false,
       "nullable": false,
       "type": "number",
@@ -1307,7 +1370,8 @@
         }
       ]
     },
-    "z": {
+    {
+      "label": "z",
       "optional": false,
       "nullable": false,
       "type": "number",
@@ -1325,7 +1389,7 @@
         }
       ]
     }
-  }
+  ]
 }
 ```
 

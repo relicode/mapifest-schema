@@ -22,23 +22,24 @@ export const fromTo = tuple([datetime.label('from'), datetime.label('to')])
   })
   .required()
 
-export const tile = object({
-  x: number().integer().positive().required(),
-  y: number().integer().positive().required(),
-  z: number().integer().positive().required(),
-}).required()
+export const tile = tuple([
+  number().label('x').integer().positive().required(),
+  number().label('y').integer().positive().required(),
+  number().label('z').integer().positive().required(),
+]).required()
 
 export const id = string()
   .uuid()
   .default(() => crypto.randomUUID())
+  .required()
 
 export const objectWithId = object({
   id,
-})
+}).required()
 
 export const hero = object({
-  type: string().oneOf(HERO_TYPES).default('IMAGE'),
-  url: string().url().default('https://placehold.co/800x600.png'),
+  type: string().oneOf(HERO_TYPES).default('IMAGE').required(),
+  url: string().url().default('https://placehold.co/800x600.png').required(),
 }).required()
 
 const colorLiterals = [
@@ -204,3 +205,5 @@ export const color = string()
     (value = '') =>
       colorLiterals.includes(value) || colorHexRE.test(value) || colorHslRE.test(value) || colorRgbRE.test(value)
   )
+  .default('white')
+  .required()
