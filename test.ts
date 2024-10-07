@@ -5,6 +5,8 @@ import { color, datetime } from './src/utility-schemas'
 import { baseVE } from './src/utils'
 import { invalidEvents, validEvent } from './test-data'
 
+const myUuid = crypto.randomUUID()
+
 // Sync use
 assert.throws(() => datetime.validateSync('sdfsgsd'), {
   ...baseVE,
@@ -35,3 +37,9 @@ for (const v of ['gray ', 'rgba(255, 255, 256)'])
   assert.rejects(color.validate(v), {
     errors: ['this is not a valid color'],
   })
+
+const EVE = 'eve'
+const EVE_ADMINS = [myUuid]
+const minimalistEvent = mapifestEvent.cast({ name: EVE, adminIds: EVE_ADMINS })
+assert.equal(minimalistEvent.name, EVE)
+assert.equal(minimalistEvent.adminIds, EVE_ADMINS)

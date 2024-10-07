@@ -19,6 +19,9 @@ export const validEvent: MapifestEvent = {
   name: 'Full long absolute name',
   shortName: 'Short name',
   fromTo: ['2024-09-24T09:30:03.395Z', '2024-09-28T09:30:03.395Z'],
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  tileSchema: 'https://tiles-{s}.sallamois.online/{z}/{x}/{y}.png',
+  themeColor: 'white',
   adminIds: ['ddbfa239-326c-4a43-9231-7846e74a03e7', '275ef75f-d342-4919-a8d3-2470c987cf91'],
   description: LOREM_IPSUM,
   bounds: [
