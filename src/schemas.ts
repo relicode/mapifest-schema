@@ -1,9 +1,14 @@
-import { array, object, string } from 'yup'
+import { array, number, object, string } from 'yup'
+
+import { MARKER_ICONS, ICON_SIZES } from './constants.js'
 
 import { coordinates, bounds, fromTo, id, tile, hero, objectWithId, color } from './utility-schemas.js'
 
 export const poi = object({
   coordinates: coordinates.default([0, 0]).required(),
+  icon: string().oneOf(MARKER_ICONS).required(),
+  iconWidth: number().oneOf(ICON_SIZES).required(),
+  iconHeight: number().oneOf(ICON_SIZES).required(),
   title: string().min(1).max(32).required(),
   description: string().max(16384).required(),
   hero: hero.optional(),

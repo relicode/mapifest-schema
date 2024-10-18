@@ -14,8 +14,8 @@
     "themeColor": "white",
     "pois": [],
     "fromTo": [
-      "2024-10-07T15:54:15.039Z",
-      "2024-10-10T15:54:15.039Z"
+      "2024-10-18T08:28:46.193Z",
+      "2024-10-21T08:28:46.193Z"
     ],
     "center": [
       0,
@@ -31,7 +31,7 @@
         0
       ]
     ],
-    "id": "309956b9-c72e-44e0-8e60-cd9a9e96c8dd"
+    "id": "1ba1eaca-6fde-428b-8f03-c511f620a947"
   },
   "type": "object",
   "oneOf": [],
@@ -41,7 +41,7 @@
     "id": {
       "optional": false,
       "nullable": false,
-      "default": "adfd1a5c-aa7f-44ab-8b28-45af3eb0f3a3",
+      "default": "a82aeb5e-038f-4f87-a18f-b1dcbd631398",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -74,7 +74,7 @@
       "innerType": {
         "optional": false,
         "nullable": false,
-        "default": "f14abf49-4968-4ce4-b1e0-2f8dc154cc27",
+        "default": "d1898c2b-bf6d-44a6-abff-9d7621696deb",
         "type": "string",
         "oneOf": [],
         "notOneOf": [],
@@ -298,8 +298,8 @@
       "optional": false,
       "nullable": false,
       "default": [
-        "2024-10-07T15:54:15.040Z",
-        "2024-10-10T15:54:15.040Z"
+        "2024-10-18T08:28:46.194Z",
+        "2024-10-21T08:28:46.194Z"
       ],
       "type": "tuple",
       "oneOf": [],
@@ -310,7 +310,7 @@
           "label": "from",
           "optional": true,
           "nullable": false,
-          "default": "2024-10-07T15:54:15.040Z",
+          "default": "2024-10-18T08:28:46.194Z",
           "type": "string",
           "oneOf": [],
           "notOneOf": [],
@@ -335,7 +335,7 @@
           "label": "to",
           "optional": true,
           "nullable": false,
-          "default": "2024-10-07T15:54:15.040Z",
+          "default": "2024-10-18T08:28:46.194Z",
           "type": "string",
           "oneOf": [],
           "notOneOf": [],
@@ -402,7 +402,7 @@
             0,
             0
           ],
-          "id": "a64ba751-574a-47f7-a479-a26269df4e23"
+          "id": "4751267f-5910-447a-8285-cd0da9a3008c"
         },
         "type": "object",
         "oneOf": [],
@@ -412,7 +412,7 @@
           "id": {
             "optional": false,
             "nullable": false,
-            "default": "5ae56eb4-95ee-46f6-9f33-03b2dc24fce2",
+            "default": "d61328f8-fb24-428f-8b34-e86780940fd4",
             "type": "string",
             "oneOf": [],
             "notOneOf": [],
@@ -485,6 +485,55 @@
                 ]
               }
             ]
+          },
+          "icon": {
+            "optional": false,
+            "nullable": false,
+            "type": "string",
+            "oneOf": [
+              "apple-tree",
+              "bonfire",
+              "cellar",
+              "destination",
+              "field",
+              "forest",
+              "greenhouse",
+              "man",
+              "manor",
+              "sculpture",
+              "tree",
+              "trees"
+            ],
+            "notOneOf": [],
+            "tests": [
+              {
+                "name": "required"
+              }
+            ]
+          },
+          "iconWidth": {
+            "optional": false,
+            "nullable": false,
+            "type": "number",
+            "oneOf": [
+              32,
+              48,
+              64
+            ],
+            "notOneOf": [],
+            "tests": []
+          },
+          "iconHeight": {
+            "optional": false,
+            "nullable": false,
+            "type": "number",
+            "oneOf": [
+              32,
+              48,
+              64
+            ],
+            "notOneOf": [],
+            "tests": []
           },
           "title": {
             "optional": false,
@@ -731,7 +780,7 @@
       0,
       0
     ],
-    "id": "8e10429e-c4cf-4160-905e-b080aff29524"
+    "id": "27521a03-61c9-4970-8076-5f249b62d735"
   },
   "type": "object",
   "oneOf": [],
@@ -741,7 +790,7 @@
     "id": {
       "optional": false,
       "nullable": false,
-      "default": "ea3d2636-60d7-470f-8eb2-dfce8c6e12bd",
+      "default": "1ed95e54-bac7-4104-93fd-06eeaa1084e1",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -814,6 +863,55 @@
           ]
         }
       ]
+    },
+    "icon": {
+      "optional": false,
+      "nullable": false,
+      "type": "string",
+      "oneOf": [
+        "apple-tree",
+        "bonfire",
+        "cellar",
+        "destination",
+        "field",
+        "forest",
+        "greenhouse",
+        "man",
+        "manor",
+        "sculpture",
+        "tree",
+        "trees"
+      ],
+      "notOneOf": [],
+      "tests": [
+        {
+          "name": "required"
+        }
+      ]
+    },
+    "iconWidth": {
+      "optional": false,
+      "nullable": false,
+      "type": "number",
+      "oneOf": [
+        32,
+        48,
+        64
+      ],
+      "notOneOf": [],
+      "tests": []
+    },
+    "iconHeight": {
+      "optional": false,
+      "nullable": false,
+      "type": "number",
+      "oneOf": [
+        32,
+        48,
+        64
+      ],
+      "notOneOf": [],
+      "tests": []
     },
     "title": {
       "optional": false,
@@ -1119,7 +1217,7 @@
 {
   "optional": true,
   "nullable": false,
-  "default": "2024-10-07T15:54:15.042Z",
+  "default": "2024-10-18T08:28:46.195Z",
   "type": "string",
   "oneOf": [],
   "notOneOf": [],
@@ -1148,8 +1246,8 @@
   "optional": false,
   "nullable": false,
   "default": [
-    "2024-10-07T15:54:15.042Z",
-    "2024-10-10T15:54:15.042Z"
+    "2024-10-18T08:28:46.195Z",
+    "2024-10-21T08:28:46.195Z"
   ],
   "type": "tuple",
   "oneOf": [],
@@ -1160,7 +1258,7 @@
       "label": "from",
       "optional": true,
       "nullable": false,
-      "default": "2024-10-07T15:54:15.042Z",
+      "default": "2024-10-18T08:28:46.195Z",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -1185,7 +1283,7 @@
       "label": "to",
       "optional": true,
       "nullable": false,
-      "default": "2024-10-07T15:54:15.042Z",
+      "default": "2024-10-18T08:28:46.195Z",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -1268,7 +1366,7 @@
 {
   "optional": false,
   "nullable": false,
-  "default": "8f6a2cc4-07f4-47e9-8d57-745eccdac8c0",
+  "default": "5e158f67-b46f-461e-9f45-856728b174eb",
   "type": "string",
   "oneOf": [],
   "notOneOf": [],
@@ -1292,7 +1390,7 @@
   "optional": false,
   "nullable": false,
   "default": {
-    "id": "0807eb60-9d14-4e03-9ae9-404725f113ca"
+    "id": "ed3ba7f9-f7c0-4713-83f0-16f1bc799511"
   },
   "type": "object",
   "oneOf": [],
@@ -1302,7 +1400,7 @@
     "id": {
       "optional": false,
       "nullable": false,
-      "default": "ee8bf37c-7409-4168-8819-964425f6f990",
+      "default": "5ead930c-a4fa-4a18-b894-e1a1b8024a01",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],

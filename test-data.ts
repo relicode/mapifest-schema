@@ -38,6 +38,9 @@ export const validEvent: MapifestEvent = {
     {
       id: '61be260b-a6fc-4fe8-bcf4-4119d4e2ab73',
       title: 'POI title',
+      icon: 'sculpture',
+      iconHeight: 32,
+      iconWidth: 32,
       description: 'POI description',
       coordinates: [58.95402210698978, 26.37804676080017],
       hero: {
