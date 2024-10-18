@@ -30,9 +30,12 @@ export const mapifestEvent = object({
   name: string().min(3).max(128).required(),
   pois: array().of(poi).default([]).required(),
   shortName: string().max(32),
-  themeColor: color.required(),
+  themeColor: color.default('#ecece8').required(),
   tiles: array().of(tile).default([]).required(),
   tileSchema: string().default('https://tiles-{s}.sallamois.online/{z}/{x}/{y}.png').required(),
+  userIcon: string().oneOf(MARKER_ICONS).default('man').required(),
+  userIconWidth: number().oneOf(ICON_SIZES).default(32).required(),
+  userIconHeight: number().oneOf(ICON_SIZES).default(32).required(),
   attribution: string()
     .default('&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors')
     .required(),
