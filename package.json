@@ -14,7 +14,6 @@
     "test": "tsx test"
   },
   "dependencies": {
-    "@esbuild/darwin-arm64": "^0.24.0",
     "@sinclair/typebox": "^0.33.12",
     "yup": "^1.4.0"
   },

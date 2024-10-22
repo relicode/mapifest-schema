@@ -5,7 +5,12 @@ import * as schemas from './schemas.js'
 import * as utils from './utils.js'
 import * as utilitySchemas from './utility-schemas.js'
 
-export { constants, schemas, utils }
+export {
+  constants,
+  schemas,
+  utilitySchemas,
+  utils
+}
 
 type Schemas = typeof schemas
 type UtilitySchemas = typeof utilitySchemas

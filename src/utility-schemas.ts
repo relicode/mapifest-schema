@@ -1,5 +1,5 @@
 import { number, object, string, tuple } from 'yup'
-import { HERO_TYPES } from './constants'
+import { HERO_TYPES } from './constants.js'
 
 export const coordinates = tuple([
   number().min(-90).max(90).required().label('latitude'),
