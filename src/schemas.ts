@@ -1,12 +1,12 @@
 import { array, number, object, string } from 'yup'
 
-import { MARKER_ICONS, ICON_SIZES } from './constants.js'
+import { ICON_SIZES } from './constants.js'
 
 import { coordinates, bounds, fromTo, id, tile, hero, objectWithId, color } from './utility-schemas.js'
 
 export const poi = object({
   coordinates: coordinates.default([0, 0]).required(),
-  icon: string().oneOf(MARKER_ICONS).required(),
+  icon: string().required(),
   iconWidth: number().oneOf(ICON_SIZES).required(),
   iconHeight: number().oneOf(ICON_SIZES).required(),
   title: string().min(1).max(32).required(),
@@ -33,7 +33,7 @@ export const mapifestEvent = object({
   themeColor: color.default('#ecece8').required(),
   tiles: array().of(tile).default([]).required(),
   tileSchema: string().default('https://tiles-{s}.sallamois.online/{z}/{x}/{y}.png').required(),
-  userIcon: string().oneOf(MARKER_ICONS).default('man').required(),
+  userIcon: string().default('/marker-icons/4668370-map-and-navigation/059-street_view.svg').required(),
   userIconWidth: number().oneOf(ICON_SIZES).default(32).required(),
   userIconHeight: number().oneOf(ICON_SIZES).default(32).required(),
   attribution: string()

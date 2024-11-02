@@ -11,14 +11,14 @@
     "attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
     "userIconHeight": 32,
     "userIconWidth": 32,
-    "userIcon": "man",
+    "userIcon": "/marker-icons/4668370-map-and-navigation/059-street_view.svg",
     "tileSchema": "https://tiles-{s}.sallamois.online/{z}/{x}/{y}.png",
     "tiles": [],
     "themeColor": "#ecece8",
     "pois": [],
     "fromTo": [
-      "2024-10-22T01:30:21.226Z",
-      "2024-10-25T01:30:21.226Z"
+      "2024-11-02T11:33:17.497Z",
+      "2024-11-05T11:33:17.497Z"
     ],
     "center": [
       0,
@@ -34,7 +34,7 @@
         0
       ]
     ],
-    "id": "6c79e21d-a386-4605-809a-541053109ee4"
+    "id": "aa9d6b75-1e38-4e09-9aa1-60a1f964f0d7"
   },
   "type": "object",
   "oneOf": [],
@@ -44,7 +44,7 @@
     "id": {
       "optional": false,
       "nullable": false,
-      "default": "36726cf6-73cc-4116-b2ed-1c4090a85f2d",
+      "default": "7a91f345-f6e4-450e-9188-547027cc3069",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -77,7 +77,7 @@
       "innerType": {
         "optional": false,
         "nullable": false,
-        "default": "a0f574ed-a5d9-4d90-8661-bf7f7b476e10",
+        "default": "e10c9fdd-83e1-4036-bfcd-41472a3c248b",
         "type": "string",
         "oneOf": [],
         "notOneOf": [],
@@ -301,8 +301,8 @@
       "optional": false,
       "nullable": false,
       "default": [
-        "2024-10-22T01:30:21.227Z",
-        "2024-10-25T01:30:21.227Z"
+        "2024-11-02T11:33:17.498Z",
+        "2024-11-05T11:33:17.498Z"
       ],
       "type": "tuple",
       "oneOf": [],
@@ -313,7 +313,7 @@
           "label": "from",
           "optional": true,
           "nullable": false,
-          "default": "2024-10-22T01:30:21.227Z",
+          "default": "2024-11-02T11:33:17.498Z",
           "type": "string",
           "oneOf": [],
           "notOneOf": [],
@@ -338,7 +338,7 @@
           "label": "to",
           "optional": true,
           "nullable": false,
-          "default": "2024-10-22T01:30:21.227Z",
+          "default": "2024-11-02T11:33:17.498Z",
           "type": "string",
           "oneOf": [],
           "notOneOf": [],
@@ -405,7 +405,7 @@
             0,
             0
           ],
-          "id": "34114df5-bc0a-4609-9757-b42badc2c8f8"
+          "id": "794c27b4-93fd-43e4-bf14-c75d4194681c"
         },
         "type": "object",
         "oneOf": [],
@@ -415,7 +415,7 @@
           "id": {
             "optional": false,
             "nullable": false,
-            "default": "8c10aaca-d4c8-433f-a812-e022baf20065",
+            "default": "4c0e0a83-6913-4398-8747-497c6aba9a5e",
             "type": "string",
             "oneOf": [],
             "notOneOf": [],
@@ -493,20 +493,7 @@
             "optional": false,
             "nullable": false,
             "type": "string",
-            "oneOf": [
-              "apple-tree",
-              "bonfire",
-              "cellar",
-              "destination",
-              "field",
-              "forest",
-              "greenhouse",
-              "man",
-              "manor",
-              "sculpture",
-              "tree",
-              "trees"
-            ],
+            "oneOf": [],
             "notOneOf": [],
             "tests": [
               {
@@ -755,22 +742,9 @@
     "userIcon": {
       "optional": false,
       "nullable": false,
-      "default": "man",
+      "default": "/marker-icons/4668370-map-and-navigation/059-street_view.svg",
       "type": "string",
-      "oneOf": [
-        "apple-tree",
-        "bonfire",
-        "cellar",
-        "destination",
-        "field",
-        "forest",
-        "greenhouse",
-        "man",
-        "manor",
-        "sculpture",
-        "tree",
-        "trees"
-      ],
+      "oneOf": [],
       "notOneOf": [],
       "tests": [
         {
@@ -835,7 +809,7 @@
       0,
       0
     ],
-    "id": "48705144-6cc1-4b9f-ad27-f8bbc2b0256e"
+    "id": "32b8bef5-987e-4df7-a861-5d4f5484f041"
   },
   "type": "object",
   "oneOf": [],
@@ -845,7 +819,7 @@
     "id": {
       "optional": false,
       "nullable": false,
-      "default": "5a24c5a0-db7d-4997-96ac-5a7b935bcd3a",
+      "default": "fba85f13-7ef3-4ea7-a3a6-b28c02c75049",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -923,20 +897,7 @@
       "optional": false,
       "nullable": false,
       "type": "string",
-      "oneOf": [
-        "apple-tree",
-        "bonfire",
-        "cellar",
-        "destination",
-        "field",
-        "forest",
-        "greenhouse",
-        "man",
-        "manor",
-        "sculpture",
-        "tree",
-        "trees"
-      ],
+      "oneOf": [],
       "notOneOf": [],
       "tests": [
         {
@@ -1272,7 +1233,7 @@
 {
   "optional": true,
   "nullable": false,
-  "default": "2024-10-22T01:30:21.229Z",
+  "default": "2024-11-02T11:33:17.500Z",
   "type": "string",
   "oneOf": [],
   "notOneOf": [],
@@ -1301,8 +1262,8 @@
   "optional": false,
   "nullable": false,
   "default": [
-    "2024-10-22T01:30:21.229Z",
-    "2024-10-25T01:30:21.229Z"
+    "2024-11-02T11:33:17.500Z",
+    "2024-11-05T11:33:17.500Z"
   ],
   "type": "tuple",
   "oneOf": [],
@@ -1313,7 +1274,7 @@
       "label": "from",
       "optional": true,
       "nullable": false,
-      "default": "2024-10-22T01:30:21.229Z",
+      "default": "2024-11-02T11:33:17.500Z",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -1338,7 +1299,7 @@
       "label": "to",
       "optional": true,
       "nullable": false,
-      "default": "2024-10-22T01:30:21.229Z",
+      "default": "2024-11-02T11:33:17.500Z",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -1421,7 +1382,7 @@
 {
   "optional": false,
   "nullable": false,
-  "default": "f11d0a94-8373-459d-80c1-9cef35cb8450",
+  "default": "c8b77b5b-2d37-4616-bb59-94c565959caf",
   "type": "string",
   "oneOf": [],
   "notOneOf": [],
@@ -1445,7 +1406,7 @@
   "optional": false,
   "nullable": false,
   "default": {
-    "id": "09481021-dfb2-43c9-bedd-6048de34c95e"
+    "id": "9de199d3-f399-4037-abff-d3cbc6d888f6"
   },
   "type": "object",
   "oneOf": [],
@@ -1455,7 +1416,7 @@
     "id": {
       "optional": false,
       "nullable": false,
-      "default": "727921cb-bf3f-48ab-afd3-ca4ba55bc2c3",
+      "default": "3b78d74f-a74e-41d2-86c4-2bd3150d1d03",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
