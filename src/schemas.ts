@@ -32,7 +32,7 @@ export const mapifestEvent = object({
   shortName: string().max(32),
   themeColor: color.default('#ecece8').required(),
   tiles: array().of(tile).default([]).required(),
-  tileSchema: string().default('https://tiles-{s}.sallamois.online/{z}/{x}/{y}.png').required(),
+  tileSchema: string().default('https://tiles-{s}.sallamois.online/tile/{z}/{x}/{y}.png').required(),
   userIcon: string().default('/marker-icons/4668370-map-and-navigation/059-street_view.svg').required(),
   userIconWidth: number().oneOf(ICON_SIZES).default(32).required(),
   userIconHeight: number().oneOf(ICON_SIZES).default(32).required(),

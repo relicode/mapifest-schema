@@ -12,13 +12,13 @@
     "userIconHeight": 32,
     "userIconWidth": 32,
     "userIcon": "/marker-icons/4668370-map-and-navigation/059-street_view.svg",
-    "tileSchema": "https://tiles-{s}.sallamois.online/{z}/{x}/{y}.png",
+    "tileSchema": "https://tiles-{s}.sallamois.online/tile/{z}/{x}/{y}.png",
     "tiles": [],
     "themeColor": "#ecece8",
     "pois": [],
     "fromTo": [
-      "2024-11-02T11:33:17.497Z",
-      "2024-11-05T11:33:17.497Z"
+      "2024-11-02T13:41:50.986Z",
+      "2024-11-05T13:41:50.986Z"
     ],
     "center": [
       0,
@@ -34,7 +34,7 @@
         0
       ]
     ],
-    "id": "aa9d6b75-1e38-4e09-9aa1-60a1f964f0d7"
+    "id": "855e6889-fc35-46c2-b8c4-8b8bbb62781b"
   },
   "type": "object",
   "oneOf": [],
@@ -44,7 +44,7 @@
     "id": {
       "optional": false,
       "nullable": false,
-      "default": "7a91f345-f6e4-450e-9188-547027cc3069",
+      "default": "1656cb14-de5c-4abb-8fe2-73cf970eeeab",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -77,7 +77,7 @@
       "innerType": {
         "optional": false,
         "nullable": false,
-        "default": "e10c9fdd-83e1-4036-bfcd-41472a3c248b",
+        "default": "88bfea92-4ea8-4652-a9c4-5700669e1ff5",
         "type": "string",
         "oneOf": [],
         "notOneOf": [],
@@ -301,8 +301,8 @@
       "optional": false,
       "nullable": false,
       "default": [
-        "2024-11-02T11:33:17.498Z",
-        "2024-11-05T11:33:17.498Z"
+        "2024-11-02T13:41:50.987Z",
+        "2024-11-05T13:41:50.987Z"
       ],
       "type": "tuple",
       "oneOf": [],
@@ -313,7 +313,7 @@
           "label": "from",
           "optional": true,
           "nullable": false,
-          "default": "2024-11-02T11:33:17.498Z",
+          "default": "2024-11-02T13:41:50.987Z",
           "type": "string",
           "oneOf": [],
           "notOneOf": [],
@@ -338,7 +338,7 @@
           "label": "to",
           "optional": true,
           "nullable": false,
-          "default": "2024-11-02T11:33:17.498Z",
+          "default": "2024-11-02T13:41:50.987Z",
           "type": "string",
           "oneOf": [],
           "notOneOf": [],
@@ -405,7 +405,7 @@
             0,
             0
           ],
-          "id": "794c27b4-93fd-43e4-bf14-c75d4194681c"
+          "id": "dc2c4301-f927-4970-901f-a47a86611dda"
         },
         "type": "object",
         "oneOf": [],
@@ -415,7 +415,7 @@
           "id": {
             "optional": false,
             "nullable": false,
-            "default": "4c0e0a83-6913-4398-8747-497c6aba9a5e",
+            "default": "5b2b591e-a265-434e-adcc-76f3c2b14932",
             "type": "string",
             "oneOf": [],
             "notOneOf": [],
@@ -729,7 +729,7 @@
     "tileSchema": {
       "optional": false,
       "nullable": false,
-      "default": "https://tiles-{s}.sallamois.online/{z}/{x}/{y}.png",
+      "default": "https://tiles-{s}.sallamois.online/tile/{z}/{x}/{y}.png",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -809,7 +809,7 @@
       0,
       0
     ],
-    "id": "32b8bef5-987e-4df7-a861-5d4f5484f041"
+    "id": "0baf3ee3-0701-4eaa-8a19-4063a52d5348"
   },
   "type": "object",
   "oneOf": [],
@@ -819,7 +819,7 @@
     "id": {
       "optional": false,
       "nullable": false,
-      "default": "fba85f13-7ef3-4ea7-a3a6-b28c02c75049",
+      "default": "7557c8a3-6a65-43bd-b588-735bb629780d",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -1233,7 +1233,7 @@
 {
   "optional": true,
   "nullable": false,
-  "default": "2024-11-02T11:33:17.500Z",
+  "default": "2024-11-02T13:41:50.989Z",
   "type": "string",
   "oneOf": [],
   "notOneOf": [],
@@ -1262,8 +1262,8 @@
   "optional": false,
   "nullable": false,
   "default": [
-    "2024-11-02T11:33:17.500Z",
-    "2024-11-05T11:33:17.500Z"
+    "2024-11-02T13:41:50.989Z",
+    "2024-11-05T13:41:50.989Z"
   ],
   "type": "tuple",
   "oneOf": [],
@@ -1274,7 +1274,7 @@
       "label": "from",
       "optional": true,
       "nullable": false,
-      "default": "2024-11-02T11:33:17.500Z",
+      "default": "2024-11-02T13:41:50.989Z",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -1299,7 +1299,7 @@
       "label": "to",
       "optional": true,
       "nullable": false,
-      "default": "2024-11-02T11:33:17.500Z",
+      "default": "2024-11-02T13:41:50.989Z",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -1382,7 +1382,7 @@
 {
   "optional": false,
   "nullable": false,
-  "default": "c8b77b5b-2d37-4616-bb59-94c565959caf",
+  "default": "0bda2af2-3db3-4f4c-88d5-5dab9f8d4754",
   "type": "string",
   "oneOf": [],
   "notOneOf": [],
@@ -1406,7 +1406,7 @@
   "optional": false,
   "nullable": false,
   "default": {
-    "id": "9de199d3-f399-4037-abff-d3cbc6d888f6"
+    "id": "b6cffa3c-9843-4ecd-951f-8be0f30569dd"
   },
   "type": "object",
   "oneOf": [],
@@ -1416,7 +1416,7 @@
     "id": {
       "optional": false,
       "nullable": false,
-      "default": "3b78d74f-a74e-41d2-86c4-2bd3150d1d03",
+      "default": "6f1c5497-68d9-4221-8d41-bebd765c2bbe",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
