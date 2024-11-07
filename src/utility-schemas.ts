@@ -1,17 +1,17 @@
 import { number, object, string, tuple } from 'yup'
-import { HERO_TYPES } from './constants.js'
+import { DEFAULT_ICON, IconSize, ICON_SIZES, HERO_TYPES } from './constants.js'
 
 export const coordinates = tuple([
   number().min(-90).max(90).required().label('latitude'),
   number().min(-180).max(180).required().label('longitude'),
-  // nnumber().positive().min(0).label('altitude'),
+  // number().positive().min(0).label('altitude'),
 ]).required()
 
 export const bounds = tuple([coordinates.label('first corner'), coordinates.label('second corner')]).required()
 
 export const datetime = string()
   .datetime()
-  .default(() => new Date().toISOString())
+  .default(() => new Date().toISOString()).required()
 
 export const fromTo = tuple([datetime.label('from'), datetime.label('to')])
   .default(() => {
@@ -35,6 +35,11 @@ export const id = string()
 
 export const objectWithId = object({
   id,
+}).required()
+
+export const objectWithIcon = object({
+  icon: string().url().default(DEFAULT_ICON).required(),
+  iconSize: number().oneOf(ICON_SIZES).default(IconSize.MEDIUM).required(),
 }).required()
 
 export const hero = object({

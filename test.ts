@@ -43,3 +43,5 @@ const EVE_ADMINS = [myUuid]
 const minimalistEvent = mapifestEvent.cast({ name: EVE, adminIds: EVE_ADMINS })
 assert.equal(minimalistEvent.name, EVE)
 assert.equal(minimalistEvent.adminIds, EVE_ADMINS)
+
+console.log(JSON.stringify(minimalistEvent, null, 2))

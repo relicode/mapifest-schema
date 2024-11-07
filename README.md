@@ -9,16 +9,17 @@
   "nullable": false,
   "default": {
     "attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-    "userIconHeight": 32,
-    "userIconWidth": 32,
-    "userIcon": "/marker-icons/4668370-map-and-navigation/059-street_view.svg",
     "tileSchema": "https://tiles-ee-{s}.sallamois.online/tile/{z}/{x}/{y}.png",
     "tiles": [],
     "themeColor": "#ecece8",
+    "userIcon": {
+      "iconSize": 48,
+      "icon": "http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg"
+    },
     "pois": [],
     "fromTo": [
-      "2024-11-07T08:49:36.113Z",
-      "2024-11-10T08:49:36.113Z"
+      "2024-11-07T10:39:14.668Z",
+      "2024-11-10T10:39:14.668Z"
     ],
     "center": [
       0,
@@ -34,7 +35,7 @@
         0
       ]
     ],
-    "id": "64977deb-4808-449c-9f98-f52d55287f5f"
+    "id": "3b3c6c10-40f3-4539-950f-cc2d22a43968"
   },
   "type": "object",
   "oneOf": [],
@@ -44,7 +45,7 @@
     "id": {
       "optional": false,
       "nullable": false,
-      "default": "a2e5adeb-d7be-4734-8b93-d5aad495b17e",
+      "default": "8e365bda-e454-47ee-b135-e336574677da",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -77,7 +78,7 @@
       "innerType": {
         "optional": false,
         "nullable": false,
-        "default": "76764442-8541-451d-ad58-3b6f4da7aef3",
+        "default": "7d75b22c-7577-4323-a4e7-2715c7816e3c",
         "type": "string",
         "oneOf": [],
         "notOneOf": [],
@@ -301,8 +302,8 @@
       "optional": false,
       "nullable": false,
       "default": [
-        "2024-11-07T08:49:36.115Z",
-        "2024-11-10T08:49:36.115Z"
+        "2024-11-07T10:39:14.668Z",
+        "2024-11-10T10:39:14.668Z"
       ],
       "type": "tuple",
       "oneOf": [],
@@ -311,9 +312,9 @@
       "innerType": [
         {
           "label": "from",
-          "optional": true,
+          "optional": false,
           "nullable": false,
-          "default": "2024-11-07T08:49:36.115Z",
+          "default": "2024-11-07T10:39:14.669Z",
           "type": "string",
           "oneOf": [],
           "notOneOf": [],
@@ -331,14 +332,17 @@
             {
               "name": "datetime_precision",
               "params": {}
+            },
+            {
+              "name": "required"
             }
           ]
         },
         {
           "label": "to",
-          "optional": true,
+          "optional": false,
           "nullable": false,
-          "default": "2024-11-07T08:49:36.115Z",
+          "default": "2024-11-07T10:39:14.669Z",
           "type": "string",
           "oneOf": [],
           "notOneOf": [],
@@ -356,6 +360,9 @@
             {
               "name": "datetime_precision",
               "params": {}
+            },
+            {
+              "name": "required"
             }
           ]
         }
@@ -405,17 +412,51 @@
             0,
             0
           ],
-          "id": "ca7433b2-00fc-4c8f-8340-5899402159c0"
+          "id": "f6b0070c-5550-4ab1-a438-8f55cab5fb7e",
+          "iconSize": 48,
+          "icon": "http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg"
         },
         "type": "object",
         "oneOf": [],
         "notOneOf": [],
         "tests": [],
         "fields": {
+          "icon": {
+            "optional": false,
+            "nullable": false,
+            "default": "http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg",
+            "type": "string",
+            "oneOf": [],
+            "notOneOf": [],
+            "tests": [
+              {
+                "name": "url",
+                "params": {
+                  "regex": {}
+                }
+              },
+              {
+                "name": "required"
+              }
+            ]
+          },
+          "iconSize": {
+            "optional": false,
+            "nullable": false,
+            "default": 48,
+            "type": "number",
+            "oneOf": [
+              32,
+              48,
+              64
+            ],
+            "notOneOf": [],
+            "tests": []
+          },
           "id": {
             "optional": false,
             "nullable": false,
-            "default": "82512604-8413-4141-845c-077bc049c6b3",
+            "default": "ffce2f0a-50f4-46aa-bb06-ddf20c72b27e",
             "type": "string",
             "oneOf": [],
             "notOneOf": [],
@@ -488,42 +529,6 @@
                 ]
               }
             ]
-          },
-          "icon": {
-            "optional": false,
-            "nullable": false,
-            "type": "string",
-            "oneOf": [],
-            "notOneOf": [],
-            "tests": [
-              {
-                "name": "required"
-              }
-            ]
-          },
-          "iconWidth": {
-            "optional": false,
-            "nullable": false,
-            "type": "number",
-            "oneOf": [
-              32,
-              48,
-              64
-            ],
-            "notOneOf": [],
-            "tests": []
-          },
-          "iconHeight": {
-            "optional": false,
-            "nullable": false,
-            "type": "number",
-            "oneOf": [
-              32,
-              48,
-              64
-            ],
-            "notOneOf": [],
-            "tests": []
           },
           "title": {
             "optional": false,
@@ -616,6 +621,52 @@
               }
             }
           }
+        }
+      }
+    },
+    "userIcon": {
+      "optional": false,
+      "nullable": false,
+      "default": {
+        "iconSize": 48,
+        "icon": "http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg"
+      },
+      "type": "object",
+      "oneOf": [],
+      "notOneOf": [],
+      "tests": [],
+      "fields": {
+        "icon": {
+          "optional": false,
+          "nullable": false,
+          "default": "http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg",
+          "type": "string",
+          "oneOf": [],
+          "notOneOf": [],
+          "tests": [
+            {
+              "name": "url",
+              "params": {
+                "regex": {}
+              }
+            },
+            {
+              "name": "required"
+            }
+          ]
+        },
+        "iconSize": {
+          "optional": false,
+          "nullable": false,
+          "default": 48,
+          "type": "number",
+          "oneOf": [
+            32,
+            48,
+            64
+          ],
+          "notOneOf": [],
+          "tests": []
         }
       }
     },
@@ -739,45 +790,6 @@
         }
       ]
     },
-    "userIcon": {
-      "optional": false,
-      "nullable": false,
-      "default": "/marker-icons/4668370-map-and-navigation/059-street_view.svg",
-      "type": "string",
-      "oneOf": [],
-      "notOneOf": [],
-      "tests": [
-        {
-          "name": "required"
-        }
-      ]
-    },
-    "userIconWidth": {
-      "optional": false,
-      "nullable": false,
-      "default": 32,
-      "type": "number",
-      "oneOf": [
-        32,
-        48,
-        64
-      ],
-      "notOneOf": [],
-      "tests": []
-    },
-    "userIconHeight": {
-      "optional": false,
-      "nullable": false,
-      "default": 32,
-      "type": "number",
-      "oneOf": [
-        32,
-        48,
-        64
-      ],
-      "notOneOf": [],
-      "tests": []
-    },
     "attribution": {
       "optional": false,
       "nullable": false,
@@ -809,17 +821,51 @@
       0,
       0
     ],
-    "id": "871165d4-b3a8-4c7e-8bd8-a1377f92c4f4"
+    "id": "6a098845-ce4d-4c4b-a626-6cf980e7f582",
+    "iconSize": 48,
+    "icon": "http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg"
   },
   "type": "object",
   "oneOf": [],
   "notOneOf": [],
   "tests": [],
   "fields": {
+    "icon": {
+      "optional": false,
+      "nullable": false,
+      "default": "http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg",
+      "type": "string",
+      "oneOf": [],
+      "notOneOf": [],
+      "tests": [
+        {
+          "name": "url",
+          "params": {
+            "regex": {}
+          }
+        },
+        {
+          "name": "required"
+        }
+      ]
+    },
+    "iconSize": {
+      "optional": false,
+      "nullable": false,
+      "default": 48,
+      "type": "number",
+      "oneOf": [
+        32,
+        48,
+        64
+      ],
+      "notOneOf": [],
+      "tests": []
+    },
     "id": {
       "optional": false,
       "nullable": false,
-      "default": "75d59e15-2528-46f1-aa56-0391d4fe65af",
+      "default": "ca79a1b4-f7df-4ecc-9079-493f84b2a5c8",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -892,42 +938,6 @@
           ]
         }
       ]
-    },
-    "icon": {
-      "optional": false,
-      "nullable": false,
-      "type": "string",
-      "oneOf": [],
-      "notOneOf": [],
-      "tests": [
-        {
-          "name": "required"
-        }
-      ]
-    },
-    "iconWidth": {
-      "optional": false,
-      "nullable": false,
-      "type": "number",
-      "oneOf": [
-        32,
-        48,
-        64
-      ],
-      "notOneOf": [],
-      "tests": []
-    },
-    "iconHeight": {
-      "optional": false,
-      "nullable": false,
-      "type": "number",
-      "oneOf": [
-        32,
-        48,
-        64
-      ],
-      "notOneOf": [],
-      "tests": []
     },
     "title": {
       "optional": false,
@@ -1231,9 +1241,9 @@
 ### datetime
 ```json
 {
-  "optional": true,
+  "optional": false,
   "nullable": false,
-  "default": "2024-11-07T08:49:36.116Z",
+  "default": "2024-11-07T10:39:14.670Z",
   "type": "string",
   "oneOf": [],
   "notOneOf": [],
@@ -1251,6 +1261,9 @@
     {
       "name": "datetime_precision",
       "params": {}
+    },
+    {
+      "name": "required"
     }
   ]
 }
@@ -1262,8 +1275,8 @@
   "optional": false,
   "nullable": false,
   "default": [
-    "2024-11-07T08:49:36.116Z",
-    "2024-11-10T08:49:36.116Z"
+    "2024-11-07T10:39:14.670Z",
+    "2024-11-10T10:39:14.670Z"
   ],
   "type": "tuple",
   "oneOf": [],
@@ -1272,9 +1285,9 @@
   "innerType": [
     {
       "label": "from",
-      "optional": true,
+      "optional": false,
       "nullable": false,
-      "default": "2024-11-07T08:49:36.116Z",
+      "default": "2024-11-07T10:39:14.670Z",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -1292,14 +1305,17 @@
         {
           "name": "datetime_precision",
           "params": {}
+        },
+        {
+          "name": "required"
         }
       ]
     },
     {
       "label": "to",
-      "optional": true,
+      "optional": false,
       "nullable": false,
-      "default": "2024-11-07T08:49:36.116Z",
+      "default": "2024-11-07T10:39:14.670Z",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -1317,6 +1333,9 @@
         {
           "name": "datetime_precision",
           "params": {}
+        },
+        {
+          "name": "required"
         }
       ]
     }
@@ -1382,7 +1401,7 @@
 {
   "optional": false,
   "nullable": false,
-  "default": "0cf72c5c-c594-4c62-859a-ddd001e56356",
+  "default": "f5ed297b-4167-4556-a45a-3dfb079a3c65",
   "type": "string",
   "oneOf": [],
   "notOneOf": [],
@@ -1400,13 +1419,63 @@
 }
 ```
 
+### objectWithIcon
+```json
+{
+  "optional": false,
+  "nullable": false,
+  "default": {
+    "iconSize": 48,
+    "icon": "http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg"
+  },
+  "type": "object",
+  "oneOf": [],
+  "notOneOf": [],
+  "tests": [],
+  "fields": {
+    "icon": {
+      "optional": false,
+      "nullable": false,
+      "default": "http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg",
+      "type": "string",
+      "oneOf": [],
+      "notOneOf": [],
+      "tests": [
+        {
+          "name": "url",
+          "params": {
+            "regex": {}
+          }
+        },
+        {
+          "name": "required"
+        }
+      ]
+    },
+    "iconSize": {
+      "optional": false,
+      "nullable": false,
+      "default": 48,
+      "type": "number",
+      "oneOf": [
+        32,
+        48,
+        64
+      ],
+      "notOneOf": [],
+      "tests": []
+    }
+  }
+}
+```
+
 ### objectWithId
 ```json
 {
   "optional": false,
   "nullable": false,
   "default": {
-    "id": "bab12c14-70db-4174-a0cf-ad31cc42e860"
+    "id": "590cc8f2-8092-44e5-94c2-21a8331c6923"
   },
   "type": "object",
   "oneOf": [],
@@ -1416,7 +1485,7 @@
     "id": {
       "optional": false,
       "nullable": false,
-      "default": "82f43c2c-a39f-4bf4-8adf-dbc4ecb5bf19",
+      "default": "59248742-f61e-4255-86c2-ace8b8d9e517",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
