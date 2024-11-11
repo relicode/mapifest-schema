@@ -18,24 +18,24 @@
     },
     "pois": [],
     "fromTo": [
-      "2024-11-11T08:55:03.957Z",
-      "2024-11-14T08:55:03.957Z"
+      "2024-11-11T13:18:54.029Z",
+      "2024-11-14T13:18:54.029Z"
     ],
     "center": [
-      0,
-      0
+      58.954053,
+      26.377927
     ],
     "bounds": [
       [
-        0,
-        0
+        58.956344,
+        26.370696
       ],
       [
-        0,
-        0
+        58.95184,
+        26.383367
       ]
     ],
-    "id": "a1315883-68f8-4107-9ebb-f033203ed377"
+    "id": "0fd8eb82-5b11-4bd1-9b05-aa969de27b1a"
   },
   "type": "object",
   "oneOf": [],
@@ -45,7 +45,7 @@
     "id": {
       "optional": false,
       "nullable": false,
-      "default": "9969b710-8fe0-40c5-a42e-011bfb054146",
+      "default": "4238861d-5d94-4b67-b337-8d64c73aaa58",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -78,7 +78,7 @@
       "innerType": {
         "optional": false,
         "nullable": false,
-        "default": "b10fd7d1-3900-4922-a9be-fd56acad819d",
+        "default": "7f67865f-8383-4929-8f92-40b8a121e6a5",
         "type": "string",
         "oneOf": [],
         "notOneOf": [],
@@ -100,12 +100,12 @@
       "nullable": false,
       "default": [
         [
-          0,
-          0
+          58.956344,
+          26.370696
         ],
         [
-          0,
-          0
+          58.95184,
+          26.383367
         ]
       ],
       "type": "tuple",
@@ -229,8 +229,8 @@
       "optional": false,
       "nullable": false,
       "default": [
-        0,
-        0
+        58.954053,
+        26.377927
       ],
       "type": "tuple",
       "oneOf": [],
@@ -302,8 +302,8 @@
       "optional": false,
       "nullable": false,
       "default": [
-        "2024-11-11T08:55:03.958Z",
-        "2024-11-14T08:55:03.958Z"
+        "2024-11-11T13:18:54.030Z",
+        "2024-11-14T13:18:54.030Z"
       ],
       "type": "tuple",
       "oneOf": [],
@@ -314,7 +314,7 @@
           "label": "from",
           "optional": false,
           "nullable": false,
-          "default": "2024-11-11T08:55:03.958Z",
+          "default": "2024-11-11T13:18:54.031Z",
           "type": "string",
           "oneOf": [],
           "notOneOf": [],
@@ -342,7 +342,7 @@
           "label": "to",
           "optional": false,
           "nullable": false,
-          "default": "2024-11-11T08:55:03.958Z",
+          "default": "2024-11-11T13:18:54.031Z",
           "type": "string",
           "oneOf": [],
           "notOneOf": [],
@@ -408,11 +408,7 @@
             "url": "https://placehold.co/800x600.png",
             "type": "IMAGE"
           },
-          "coordinates": [
-            0,
-            0
-          ],
-          "id": "ca2f4d8a-eebc-47b1-ae54-44144e2d2218",
+          "id": "4288bf99-40db-42ac-9810-e7b851642555",
           "iconSize": 48,
           "icon": "http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg"
         },
@@ -456,7 +452,7 @@
           "id": {
             "optional": false,
             "nullable": false,
-            "default": "2475dcc5-646a-4590-93b7-c3ce56cf9400",
+            "default": "2f1c87cb-d21c-4097-9f1a-333100b09663",
             "type": "string",
             "oneOf": [],
             "notOneOf": [],
@@ -475,10 +471,6 @@
           "coordinates": {
             "optional": false,
             "nullable": false,
-            "default": [
-              0,
-              0
-            ],
             "type": "tuple",
             "oneOf": [],
             "notOneOf": [],
@@ -814,7 +806,7 @@
         "id": {
           "optional": false,
           "nullable": false,
-          "default": "d7646b7d-bcc1-4380-9d33-50f99b3ef7a5",
+          "default": "bc21fcec-ad80-4352-9477-aea760cfb4e1",
           "type": "string",
           "oneOf": [],
           "notOneOf": [],
@@ -847,7 +839,7 @@
           "innerType": {
             "optional": false,
             "nullable": false,
-            "default": "dd0b413e-cdff-4248-912f-60347cc3a7cd",
+            "default": "f2bcc95c-6ee6-4e71-bec9-549dc363c6e1",
             "type": "string",
             "oneOf": [],
             "notOneOf": [],
@@ -869,12 +861,12 @@
           "nullable": false,
           "default": [
             [
-              0,
-              0
+              58.956344,
+              26.370696
             ],
             [
-              0,
-              0
+              58.95184,
+              26.383367
             ]
           ],
           "type": "tuple",
@@ -998,8 +990,8 @@
           "optional": false,
           "nullable": false,
           "default": [
-            0,
-            0
+            58.954053,
+            26.377927
           ],
           "type": "tuple",
           "oneOf": [],
@@ -1071,8 +1063,8 @@
           "optional": false,
           "nullable": false,
           "default": [
-            "2024-11-11T08:55:03.958Z",
-            "2024-11-14T08:55:03.958Z"
+            "2024-11-11T13:18:54.031Z",
+            "2024-11-14T13:18:54.031Z"
           ],
           "type": "tuple",
           "oneOf": [],
@@ -1083,7 +1075,7 @@
               "label": "from",
               "optional": false,
               "nullable": false,
-              "default": "2024-11-11T08:55:03.958Z",
+              "default": "2024-11-11T13:18:54.031Z",
               "type": "string",
               "oneOf": [],
               "notOneOf": [],
@@ -1111,7 +1103,7 @@
               "label": "to",
               "optional": false,
               "nullable": false,
-              "default": "2024-11-11T08:55:03.958Z",
+              "default": "2024-11-11T13:18:54.031Z",
               "type": "string",
               "oneOf": [],
               "notOneOf": [],
@@ -1177,11 +1169,7 @@
                 "url": "https://placehold.co/800x600.png",
                 "type": "IMAGE"
               },
-              "coordinates": [
-                0,
-                0
-              ],
-              "id": "d2426b3d-ef34-4549-9900-e01e860ea603",
+              "id": "8102a068-0c45-458c-870e-5ea2484698b6",
               "iconSize": 48,
               "icon": "http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg"
             },
@@ -1225,7 +1213,7 @@
               "id": {
                 "optional": false,
                 "nullable": false,
-                "default": "a81d021f-4935-426a-8e39-29c5392fd311",
+                "default": "d1a9a9c6-17b3-460e-a442-863afbd2a2e1",
                 "type": "string",
                 "oneOf": [],
                 "notOneOf": [],
@@ -1244,10 +1232,6 @@
               "coordinates": {
                 "optional": false,
                 "nullable": false,
-                "default": [
-                  0,
-                  0
-                ],
                 "type": "tuple",
                 "oneOf": [],
                 "notOneOf": [],
@@ -1588,11 +1572,7 @@
       "url": "https://placehold.co/800x600.png",
       "type": "IMAGE"
     },
-    "coordinates": [
-      0,
-      0
-    ],
-    "id": "39738310-9c3d-48af-b229-2219e4c4697f",
+    "id": "8080d90c-94d6-455c-9bdd-c569c846f1fa",
     "iconSize": 48,
     "icon": "http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg"
   },
@@ -1636,7 +1616,7 @@
     "id": {
       "optional": false,
       "nullable": false,
-      "default": "ccd1690c-2bf7-41db-9ea1-01de8d18eb50",
+      "default": "27b7653b-4846-4325-9312-df7a9722d1c5",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -1655,10 +1635,6 @@
     "coordinates": {
       "optional": false,
       "nullable": false,
-      "default": [
-        0,
-        0
-      ],
       "type": "tuple",
       "oneOf": [],
       "notOneOf": [],
@@ -2014,7 +1990,7 @@
 {
   "optional": false,
   "nullable": false,
-  "default": "2024-11-11T08:55:03.960Z",
+  "default": "2024-11-11T13:18:54.032Z",
   "type": "string",
   "oneOf": [],
   "notOneOf": [],
@@ -2046,8 +2022,8 @@
   "optional": false,
   "nullable": false,
   "default": [
-    "2024-11-11T08:55:03.960Z",
-    "2024-11-14T08:55:03.960Z"
+    "2024-11-11T13:18:54.032Z",
+    "2024-11-14T13:18:54.032Z"
   ],
   "type": "tuple",
   "oneOf": [],
@@ -2058,7 +2034,7 @@
       "label": "from",
       "optional": false,
       "nullable": false,
-      "default": "2024-11-11T08:55:03.960Z",
+      "default": "2024-11-11T13:18:54.032Z",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -2086,7 +2062,7 @@
       "label": "to",
       "optional": false,
       "nullable": false,
-      "default": "2024-11-11T08:55:03.960Z",
+      "default": "2024-11-11T13:18:54.032Z",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -2172,7 +2148,7 @@
 {
   "optional": false,
   "nullable": false,
-  "default": "6d327c0e-065e-471b-8ba9-82451cd09092",
+  "default": "862d9545-b085-434c-ab1e-3fdf8cc3734d",
   "type": "string",
   "oneOf": [],
   "notOneOf": [],
@@ -2246,7 +2222,7 @@
   "optional": false,
   "nullable": false,
   "default": {
-    "id": "3cdc4b2f-fb15-4a88-a206-e95997c54c5d"
+    "id": "d017b5d9-15c0-4c25-9978-1dae8efa41f4"
   },
   "type": "object",
   "oneOf": [],
@@ -2256,7 +2232,7 @@
     "id": {
       "optional": false,
       "nullable": false,
-      "default": "74b0c3c9-9c5d-43aa-b859-9015098e2a10",
+      "default": "c64b8e09-4b2e-4cb6-8ab6-7e5160608c5f",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],

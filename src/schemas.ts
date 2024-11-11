@@ -3,7 +3,7 @@ import { array, object, string } from 'yup'
 import { coordinates, bounds, fromTo, id, tile, hero, objectWithId, objectWithIcon, color } from './utility-schemas.js'
 
 export const poi = object({
-  coordinates: coordinates.default([0, 0]).required(),
+  coordinates: coordinates.required(),
   title: string().min(1).max(32).required(),
   description: string().max(16384).required(),
   hero: hero.optional(),
@@ -16,11 +16,11 @@ const mapifestEventBase = object({
   adminIds: array().of(id).min(1).required(),
   bounds: bounds
     .default([
-      [0, 0],
-      [0, 0],
+      [58.956344, 26.370696],
+      [58.951840, 26.383367],
     ])
     .required(),
-  center: coordinates.default([0, 0]).required(),
+  center: coordinates.default([58.954053, 26.377927]).required(),
   description: string().max(16384),
   fromTo: fromTo.required(),
   name: string().min(3).max(128).required(),
