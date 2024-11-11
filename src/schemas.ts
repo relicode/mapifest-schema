@@ -12,7 +12,7 @@ export const poi = object({
   .concat(objectWithIcon)
   .required()
 
-export const mapifestEvent = object({
+const mapifestEventBase = object({
   adminIds: array().of(id).min(1).required(),
   bounds: bounds
     .default([
@@ -33,6 +33,10 @@ export const mapifestEvent = object({
   attribution: string()
     .default('&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors')
     .required(),
+}).concat(objectWithId)
+
+export const mapifestEvent = object({
+  preview: mapifestEventBase.optional().default(undefined),
 })
-  .concat(objectWithId)
+  .concat(mapifestEventBase)
   .required()
