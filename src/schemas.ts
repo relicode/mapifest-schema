@@ -7,7 +7,7 @@ export const poi = object({
   coordinates: coordinates.required(),
   title: string().min(1).max(32).required(),
   description: string().max(16384).required(),
-  hero: hero.optional(),
+  hero: hero.default(undefined).optional(),
 })
   .concat(objectWithId)
   .concat(objectWithIcon)
