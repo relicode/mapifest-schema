@@ -1,4 +1,4 @@
-import type { Types } from './src/index'
+import type { Schemas } from './src/index'
 
 const LOREM_IPSUM = `
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula ex at vulputate maximus. Nunc vitae orci sit amet metus elementum convallis sollicitudin id dolor. Praesent euismod nisl at tortor pharetra, in lobortis ipsum aliquam. Etiam eget lectus porttitor, mattis risus non, sollicitudin velit. Donec sit amet ipsum lectus. Aenean in ligula nulla. Integer in purus mollis leo vehicula vehicula vel eget lorem. Suspendisse eu est consequat, fringilla mi condimentum, lacinia diam.
@@ -12,7 +12,7 @@ Donec varius ipsum eget mi iaculis, ut venenatis ligula sodales. In consequat si
 Morbi nulla dolor, egestas vel orci vitae, ornare dapibus urna. Fusce lobortis purus nibh, sit amet euismod massa interdum sed. Morbi ut facilisis mauris. Suspendisse a dignissim enim, id pulvinar magna. Nunc vitae vulputate magna. Donec sodales felis et imperdiet varius. Proin et tortor ipsum. Ut mi justo, ullamcorper quis gravida sed, aliquam sit amet eros. Maecenas luctus nec mauris blandit porttitor. Sed in faucibus velit. Donec sit amet sagittis lorem. Duis fringilla libero vitae pellentesque eleifend.
 `.trim()
 
-type MapifestEvent = Types['MapifestEvent']
+type MapifestEvent = Schemas['MapifestEvent']
 
 export const validEvent: MapifestEvent = {
   id: 'ed63396f-9925-4e98-9b7d-96e7d62297a8',
@@ -24,6 +24,7 @@ export const validEvent: MapifestEvent = {
   themeColor: 'white',
   adminIds: ['ddbfa239-326c-4a43-9231-7846e74a03e7', '275ef75f-d342-4919-a8d3-2470c987cf91'],
   description: LOREM_IPSUM,
+  userIcon: { iconUrl: 'http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg', iconSize: 32 },
   bounds: [
     [58.95132, 26.37354],
     [58.95603, 26.38439],
@@ -38,7 +39,7 @@ export const validEvent: MapifestEvent = {
     {
       id: '61be260b-a6fc-4fe8-bcf4-4119d4e2ab73',
       title: 'POI title',
-      icon: 'http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg',
+      iconUrl: 'http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg',
       iconSize: 32,
       description: 'POI description',
       coordinates: [58.95402210698978, 26.37804676080017],

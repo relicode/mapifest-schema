@@ -5,4 +5,4 @@ export const VALIDATION_ERROR = 'ValidationError' as const
 export const isValidationError = (e: unknown): e is ValidationError =>
   typeof e === 'function' && e.name === VALIDATION_ERROR
 
-export const baseVE = { name: VALIDATION_ERROR } as const
+export const baseValidationError = { name: VALIDATION_ERROR } as const

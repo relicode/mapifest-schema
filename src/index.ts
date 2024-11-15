@@ -5,23 +5,15 @@ import * as schemas from './schemas.js'
 import * as utils from './utils.js'
 import * as utilitySchemas from './utility-schemas.js'
 
-export {
-  constants,
-  schemas,
-  utilitySchemas,
-  utils
-}
+export { constants, schemas, utilitySchemas, utils }
 
-type Schemas = typeof schemas
-type UtilitySchemas = typeof utilitySchemas
-type Constants = typeof constants
+type SchemaTypes = typeof schemas
+type UtilitySchemaTypes = typeof utilitySchemas
 
-export type Types = { [K in keyof Schemas as Capitalize<K>]: InferType<Schemas[K]> } & {
-  [K in keyof Constants]: Constants[K]
-}
+export type Schemas = { [K in keyof SchemaTypes as Capitalize<K>]: InferType<SchemaTypes[K]> }
 
 export type UtilityTypes = {
-  [K in keyof UtilitySchemas as Capitalize<K>]: InferType<UtilitySchemas[K]>
+  [K in keyof UtilitySchemaTypes as Capitalize<K>]: InferType<UtilitySchemaTypes[K]>
 }
 
 export default schemas

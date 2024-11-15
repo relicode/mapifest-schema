@@ -1,5 +1,5 @@
 import { number, object, string, tuple } from 'yup'
-import { DEFAULT_ICON, IconSize, ICON_SIZES, HERO_TYPES } from './constants.js'
+import { IconSize, ICON_SIZES, HERO_TYPES } from './constants.js'
 
 export const coordinates = tuple([
   number().min(-90).max(90).required().label('latitude'),
@@ -11,7 +11,8 @@ export const bounds = tuple([coordinates.label('first corner'), coordinates.labe
 
 export const datetime = string()
   .datetime()
-  .default(() => new Date().toISOString()).required()
+  .default(() => new Date().toISOString())
+  .required()
 
 export const fromTo = tuple([datetime.label('from'), datetime.label('to')])
   .default(() => {
@@ -38,13 +39,13 @@ export const objectWithId = object({
 }).required()
 
 export const objectWithIcon = object({
-  icon: string().url().default(DEFAULT_ICON).required(),
+  iconUrl: string().url().required(),
   iconSize: number().oneOf(ICON_SIZES).default(IconSize.MEDIUM).required(),
 }).required()
 
 export const hero = object({
   type: string().oneOf(HERO_TYPES).default('IMAGE').required(),
-  url: string().url().default('https://placehold.co/800x600.png').required(),
+  url: string().url().required(),
 }).required()
 
 const colorLiterals = [

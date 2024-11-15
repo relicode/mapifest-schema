@@ -6,6 +6,12 @@ export enum IconSize {
   LARGE = 64,
 }
 
-export const ICON_SIZES = [IconSize.SMALL, IconSize.MEDIUM, IconSize.LARGE] as const
+export const defaults = {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  sallaMois: [58.954031, 26.377938],
+  themeColor: '#eef0d5',
+  tileSchema: 'https://tiles-ee-{s}.sallamois.online/tile/{z}/{x}/{y}.png',
+  userIcon: 'http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg',
+} as const
 
-export const DEFAULT_ICON = 'http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg'
+export const ICON_SIZES = [IconSize.SMALL, IconSize.MEDIUM, IconSize.LARGE] as const

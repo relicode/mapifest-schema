@@ -11,31 +11,16 @@
     "attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
     "tileSchema": "https://tiles-ee-{s}.sallamois.online/tile/{z}/{x}/{y}.png",
     "tiles": [],
-    "themeColor": "#ecece8",
+    "themeColor": "#eef0d5",
     "userIcon": {
-      "iconSize": 48,
-      "icon": "http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg"
+      "iconSize": 48
     },
     "pois": [],
     "fromTo": [
-      "2024-11-11T13:18:54.029Z",
-      "2024-11-14T13:18:54.029Z"
+      "2024-11-15T08:37:57.202Z",
+      "2024-11-18T08:37:57.202Z"
     ],
-    "center": [
-      58.954053,
-      26.377927
-    ],
-    "bounds": [
-      [
-        58.956344,
-        26.370696
-      ],
-      [
-        58.95184,
-        26.383367
-      ]
-    ],
-    "id": "0fd8eb82-5b11-4bd1-9b05-aa969de27b1a"
+    "id": "cbfb7bd6-c4e6-4166-87e0-feca9738bf48"
   },
   "type": "object",
   "oneOf": [],
@@ -45,7 +30,7 @@
     "id": {
       "optional": false,
       "nullable": false,
-      "default": "4238861d-5d94-4b67-b337-8d64c73aaa58",
+      "default": "bf966eba-d5b3-4a71-9a66-f42bc16c96cb",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -78,7 +63,7 @@
       "innerType": {
         "optional": false,
         "nullable": false,
-        "default": "7f67865f-8383-4929-8f92-40b8a121e6a5",
+        "default": "e94c4407-3051-4bb8-ba21-61f2a7992983",
         "type": "string",
         "oneOf": [],
         "notOneOf": [],
@@ -98,16 +83,6 @@
     "bounds": {
       "optional": false,
       "nullable": false,
-      "default": [
-        [
-          58.956344,
-          26.370696
-        ],
-        [
-          58.95184,
-          26.383367
-        ]
-      ],
       "type": "tuple",
       "oneOf": [],
       "notOneOf": [],
@@ -228,10 +203,6 @@
     "center": {
       "optional": false,
       "nullable": false,
-      "default": [
-        58.954053,
-        26.377927
-      ],
       "type": "tuple",
       "oneOf": [],
       "notOneOf": [],
@@ -302,8 +273,8 @@
       "optional": false,
       "nullable": false,
       "default": [
-        "2024-11-11T13:18:54.030Z",
-        "2024-11-14T13:18:54.030Z"
+        "2024-11-15T08:37:57.204Z",
+        "2024-11-18T08:37:57.204Z"
       ],
       "type": "tuple",
       "oneOf": [],
@@ -314,7 +285,7 @@
           "label": "from",
           "optional": false,
           "nullable": false,
-          "default": "2024-11-11T13:18:54.031Z",
+          "default": "2024-11-15T08:37:57.204Z",
           "type": "string",
           "oneOf": [],
           "notOneOf": [],
@@ -342,7 +313,7 @@
           "label": "to",
           "optional": false,
           "nullable": false,
-          "default": "2024-11-11T13:18:54.031Z",
+          "default": "2024-11-15T08:37:57.204Z",
           "type": "string",
           "oneOf": [],
           "notOneOf": [],
@@ -405,22 +376,19 @@
         "nullable": false,
         "default": {
           "hero": {
-            "url": "https://placehold.co/800x600.png",
             "type": "IMAGE"
           },
-          "id": "4288bf99-40db-42ac-9810-e7b851642555",
-          "iconSize": 48,
-          "icon": "http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg"
+          "id": "46a25a1c-0ecc-4215-a0da-b5e2a91b09bb",
+          "iconSize": 48
         },
         "type": "object",
         "oneOf": [],
         "notOneOf": [],
         "tests": [],
         "fields": {
-          "icon": {
+          "iconUrl": {
             "optional": false,
             "nullable": false,
-            "default": "http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg",
             "type": "string",
             "oneOf": [],
             "notOneOf": [],
@@ -452,7 +420,7 @@
           "id": {
             "optional": false,
             "nullable": false,
-            "default": "2f1c87cb-d21c-4097-9f1a-333100b09663",
+            "default": "9347539a-cc61-4941-8a67-da8193afd924",
             "type": "string",
             "oneOf": [],
             "notOneOf": [],
@@ -568,7 +536,6 @@
             "optional": true,
             "nullable": false,
             "default": {
-              "url": "https://placehold.co/800x600.png",
               "type": "IMAGE"
             },
             "type": "object",
@@ -595,7 +562,6 @@
               "url": {
                 "optional": false,
                 "nullable": false,
-                "default": "https://placehold.co/800x600.png",
                 "type": "string",
                 "oneOf": [],
                 "notOneOf": [],
@@ -620,18 +586,16 @@
       "optional": false,
       "nullable": false,
       "default": {
-        "iconSize": 48,
-        "icon": "http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg"
+        "iconSize": 48
       },
       "type": "object",
       "oneOf": [],
       "notOneOf": [],
       "tests": [],
       "fields": {
-        "icon": {
+        "iconUrl": {
           "optional": false,
           "nullable": false,
-          "default": "http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg",
           "type": "string",
           "oneOf": [],
           "notOneOf": [],
@@ -680,7 +644,7 @@
     "themeColor": {
       "optional": false,
       "nullable": false,
-      "default": "#ecece8",
+      "default": "#eef0d5",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -806,7 +770,7 @@
         "id": {
           "optional": false,
           "nullable": false,
-          "default": "bc21fcec-ad80-4352-9477-aea760cfb4e1",
+          "default": "ccbedc6f-d9fc-491a-bfdf-0309fb4c753c",
           "type": "string",
           "oneOf": [],
           "notOneOf": [],
@@ -839,7 +803,7 @@
           "innerType": {
             "optional": false,
             "nullable": false,
-            "default": "f2bcc95c-6ee6-4e71-bec9-549dc363c6e1",
+            "default": "ef718beb-1d65-4606-8063-da74334685dc",
             "type": "string",
             "oneOf": [],
             "notOneOf": [],
@@ -859,16 +823,6 @@
         "bounds": {
           "optional": false,
           "nullable": false,
-          "default": [
-            [
-              58.956344,
-              26.370696
-            ],
-            [
-              58.95184,
-              26.383367
-            ]
-          ],
           "type": "tuple",
           "oneOf": [],
           "notOneOf": [],
@@ -989,10 +943,6 @@
         "center": {
           "optional": false,
           "nullable": false,
-          "default": [
-            58.954053,
-            26.377927
-          ],
           "type": "tuple",
           "oneOf": [],
           "notOneOf": [],
@@ -1063,8 +1013,8 @@
           "optional": false,
           "nullable": false,
           "default": [
-            "2024-11-11T13:18:54.031Z",
-            "2024-11-14T13:18:54.031Z"
+            "2024-11-15T08:37:57.204Z",
+            "2024-11-18T08:37:57.204Z"
           ],
           "type": "tuple",
           "oneOf": [],
@@ -1075,7 +1025,7 @@
               "label": "from",
               "optional": false,
               "nullable": false,
-              "default": "2024-11-11T13:18:54.031Z",
+              "default": "2024-11-15T08:37:57.204Z",
               "type": "string",
               "oneOf": [],
               "notOneOf": [],
@@ -1103,7 +1053,7 @@
               "label": "to",
               "optional": false,
               "nullable": false,
-              "default": "2024-11-11T13:18:54.031Z",
+              "default": "2024-11-15T08:37:57.204Z",
               "type": "string",
               "oneOf": [],
               "notOneOf": [],
@@ -1166,22 +1116,19 @@
             "nullable": false,
             "default": {
               "hero": {
-                "url": "https://placehold.co/800x600.png",
                 "type": "IMAGE"
               },
-              "id": "8102a068-0c45-458c-870e-5ea2484698b6",
-              "iconSize": 48,
-              "icon": "http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg"
+              "id": "4c8d8d6b-3b7d-4e60-990f-f46c6c02a408",
+              "iconSize": 48
             },
             "type": "object",
             "oneOf": [],
             "notOneOf": [],
             "tests": [],
             "fields": {
-              "icon": {
+              "iconUrl": {
                 "optional": false,
                 "nullable": false,
-                "default": "http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg",
                 "type": "string",
                 "oneOf": [],
                 "notOneOf": [],
@@ -1213,7 +1160,7 @@
               "id": {
                 "optional": false,
                 "nullable": false,
-                "default": "d1a9a9c6-17b3-460e-a442-863afbd2a2e1",
+                "default": "65d49fe7-0113-4460-9a03-8f9de86744b3",
                 "type": "string",
                 "oneOf": [],
                 "notOneOf": [],
@@ -1329,7 +1276,6 @@
                 "optional": true,
                 "nullable": false,
                 "default": {
-                  "url": "https://placehold.co/800x600.png",
                   "type": "IMAGE"
                 },
                 "type": "object",
@@ -1356,7 +1302,6 @@
                   "url": {
                     "optional": false,
                     "nullable": false,
-                    "default": "https://placehold.co/800x600.png",
                     "type": "string",
                     "oneOf": [],
                     "notOneOf": [],
@@ -1381,18 +1326,16 @@
           "optional": false,
           "nullable": false,
           "default": {
-            "iconSize": 48,
-            "icon": "http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg"
+            "iconSize": 48
           },
           "type": "object",
           "oneOf": [],
           "notOneOf": [],
           "tests": [],
           "fields": {
-            "icon": {
+            "iconUrl": {
               "optional": false,
               "nullable": false,
-              "default": "http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg",
               "type": "string",
               "oneOf": [],
               "notOneOf": [],
@@ -1441,7 +1384,7 @@
         "themeColor": {
           "optional": false,
           "nullable": false,
-          "default": "#ecece8",
+          "default": "#eef0d5",
           "type": "string",
           "oneOf": [],
           "notOneOf": [],
@@ -1569,22 +1512,19 @@
   "nullable": false,
   "default": {
     "hero": {
-      "url": "https://placehold.co/800x600.png",
       "type": "IMAGE"
     },
-    "id": "8080d90c-94d6-455c-9bdd-c569c846f1fa",
-    "iconSize": 48,
-    "icon": "http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg"
+    "id": "d56daef1-42b2-4b4b-b649-4e06805bb341",
+    "iconSize": 48
   },
   "type": "object",
   "oneOf": [],
   "notOneOf": [],
   "tests": [],
   "fields": {
-    "icon": {
+    "iconUrl": {
       "optional": false,
       "nullable": false,
-      "default": "http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -1616,7 +1556,7 @@
     "id": {
       "optional": false,
       "nullable": false,
-      "default": "27b7653b-4846-4325-9312-df7a9722d1c5",
+      "default": "41941789-3cc5-4e60-8789-bafbfa4fb0cb",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -1732,7 +1672,6 @@
       "optional": true,
       "nullable": false,
       "default": {
-        "url": "https://placehold.co/800x600.png",
         "type": "IMAGE"
       },
       "type": "object",
@@ -1759,7 +1698,6 @@
         "url": {
           "optional": false,
           "nullable": false,
-          "default": "https://placehold.co/800x600.png",
           "type": "string",
           "oneOf": [],
           "notOneOf": [],
@@ -1990,7 +1928,7 @@
 {
   "optional": false,
   "nullable": false,
-  "default": "2024-11-11T13:18:54.032Z",
+  "default": "2024-11-15T08:37:57.205Z",
   "type": "string",
   "oneOf": [],
   "notOneOf": [],
@@ -2022,8 +1960,8 @@
   "optional": false,
   "nullable": false,
   "default": [
-    "2024-11-11T13:18:54.032Z",
-    "2024-11-14T13:18:54.032Z"
+    "2024-11-15T08:37:57.206Z",
+    "2024-11-18T08:37:57.206Z"
   ],
   "type": "tuple",
   "oneOf": [],
@@ -2034,7 +1972,7 @@
       "label": "from",
       "optional": false,
       "nullable": false,
-      "default": "2024-11-11T13:18:54.032Z",
+      "default": "2024-11-15T08:37:57.206Z",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -2062,7 +2000,7 @@
       "label": "to",
       "optional": false,
       "nullable": false,
-      "default": "2024-11-11T13:18:54.032Z",
+      "default": "2024-11-15T08:37:57.206Z",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -2096,7 +2034,6 @@
   "optional": false,
   "nullable": false,
   "default": {
-    "url": "https://placehold.co/800x600.png",
     "type": "IMAGE"
   },
   "type": "object",
@@ -2123,7 +2060,6 @@
     "url": {
       "optional": false,
       "nullable": false,
-      "default": "https://placehold.co/800x600.png",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -2148,7 +2084,7 @@
 {
   "optional": false,
   "nullable": false,
-  "default": "862d9545-b085-434c-ab1e-3fdf8cc3734d",
+  "default": "812a6c3d-c9f8-4031-8ebc-7072a3fc438f",
   "type": "string",
   "oneOf": [],
   "notOneOf": [],
@@ -2172,18 +2108,16 @@
   "optional": false,
   "nullable": false,
   "default": {
-    "iconSize": 48,
-    "icon": "http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg"
+    "iconSize": 48
   },
   "type": "object",
   "oneOf": [],
   "notOneOf": [],
   "tests": [],
   "fields": {
-    "icon": {
+    "iconUrl": {
       "optional": false,
       "nullable": false,
-      "default": "http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -2222,7 +2156,7 @@
   "optional": false,
   "nullable": false,
   "default": {
-    "id": "d017b5d9-15c0-4c25-9978-1dae8efa41f4"
+    "id": "4b1df7e8-7e49-4962-9305-e66daeae5027"
   },
   "type": "object",
   "oneOf": [],
@@ -2232,7 +2166,7 @@
     "id": {
       "optional": false,
       "nullable": false,
-      "default": "c64b8e09-4b2e-4cb6-8ab6-7e5160608c5f",
+      "default": "395f9e0f-fa7c-474b-a2aa-602cd842d46e",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],

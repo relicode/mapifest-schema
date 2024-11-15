@@ -1,6 +1,7 @@
 import { array, object, string } from 'yup'
 
 import { coordinates, bounds, fromTo, id, tile, hero, objectWithId, objectWithIcon, color } from './utility-schemas.js'
+import { defaults } from './constants.js'
 
 export const poi = object({
   coordinates: coordinates.required(),
@@ -14,25 +15,18 @@ export const poi = object({
 
 const mapifestEventBase = object({
   adminIds: array().of(id).min(1).required(),
-  bounds: bounds
-    .default([
-      [58.956344, 26.370696],
-      [58.951840, 26.383367],
-    ])
-    .required(),
-  center: coordinates.default([58.954053, 26.377927]).required(),
+  bounds: bounds.required(),
+  center: coordinates.required(),
   description: string().max(16384),
   fromTo: fromTo.required(),
   name: string().min(3).max(128).required(),
   pois: array().of(poi).default([]).required(),
   userIcon: objectWithIcon.required(),
   shortName: string().max(32),
-  themeColor: color.default('#ecece8').required(),
+  themeColor: color.default('#eef0d5').required(),
   tiles: array().of(tile).default([]).required(),
-  tileSchema: string().default('https://tiles-ee-{s}.sallamois.online/tile/{z}/{x}/{y}.png').required(),
-  attribution: string()
-    .default('&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors')
-    .required(),
+  tileSchema: string().default(defaults.tileSchema).required(),
+  attribution: string().default(defaults.attribution).required(),
 }).concat(objectWithId)
 
 export const mapifestEvent = object({
