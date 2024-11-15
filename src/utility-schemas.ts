@@ -1,5 +1,5 @@
 import { number, object, string, tuple } from 'yup'
-import { IconSize, ICON_SIZES, HERO_TYPES } from './constants.js'
+import { IconSize, ICON_SIZES, HeroType } from './constants.js'
 
 export const coordinates = tuple([
   number().min(-90).max(90).required().label('latitude'),
@@ -44,9 +44,9 @@ export const objectWithIcon = object({
 }).required()
 
 export const hero = object({
-  type: string().oneOf(HERO_TYPES).default('IMAGE').required(),
+  type: string().oneOf([HeroType.IMAGE, HeroType.YOUTUBE]).required(),
   url: string().url().required(),
-}).required()
+})
 
 const colorLiterals = [
   'aliceblue',

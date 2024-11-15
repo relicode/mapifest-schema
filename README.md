@@ -17,10 +17,10 @@
     },
     "pois": [],
     "fromTo": [
-      "2024-11-15T08:37:57.202Z",
-      "2024-11-18T08:37:57.202Z"
+      "2024-11-15T13:57:59.286Z",
+      "2024-11-18T13:57:59.286Z"
     ],
-    "id": "cbfb7bd6-c4e6-4166-87e0-feca9738bf48"
+    "id": "19a8d2a2-84f1-43dc-95a4-2588c91535e0"
   },
   "type": "object",
   "oneOf": [],
@@ -30,7 +30,7 @@
     "id": {
       "optional": false,
       "nullable": false,
-      "default": "bf966eba-d5b3-4a71-9a66-f42bc16c96cb",
+      "default": "0775c95d-79b8-4b60-82a3-6c46d7c38556",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -63,7 +63,7 @@
       "innerType": {
         "optional": false,
         "nullable": false,
-        "default": "e94c4407-3051-4bb8-ba21-61f2a7992983",
+        "default": "4428a0e9-1bf3-4ef6-a73e-759e0bdd77a4",
         "type": "string",
         "oneOf": [],
         "notOneOf": [],
@@ -273,8 +273,8 @@
       "optional": false,
       "nullable": false,
       "default": [
-        "2024-11-15T08:37:57.204Z",
-        "2024-11-18T08:37:57.204Z"
+        "2024-11-15T13:57:59.287Z",
+        "2024-11-18T13:57:59.287Z"
       ],
       "type": "tuple",
       "oneOf": [],
@@ -285,7 +285,7 @@
           "label": "from",
           "optional": false,
           "nullable": false,
-          "default": "2024-11-15T08:37:57.204Z",
+          "default": "2024-11-15T13:57:59.287Z",
           "type": "string",
           "oneOf": [],
           "notOneOf": [],
@@ -313,7 +313,7 @@
           "label": "to",
           "optional": false,
           "nullable": false,
-          "default": "2024-11-15T08:37:57.204Z",
+          "default": "2024-11-15T13:57:59.287Z",
           "type": "string",
           "oneOf": [],
           "notOneOf": [],
@@ -375,10 +375,8 @@
         "optional": false,
         "nullable": false,
         "default": {
-          "hero": {
-            "type": "IMAGE"
-          },
-          "id": "46a25a1c-0ecc-4215-a0da-b5e2a91b09bb",
+          "hero": {},
+          "id": "4c5f5e55-6f97-4f30-b282-55d6cfaa3d10",
           "iconSize": 48
         },
         "type": "object",
@@ -420,7 +418,7 @@
           "id": {
             "optional": false,
             "nullable": false,
-            "default": "9347539a-cc61-4941-8a67-da8193afd924",
+            "default": "a73171df-7044-45f2-99ce-1f5d99d0d754",
             "type": "string",
             "oneOf": [],
             "notOneOf": [],
@@ -535,9 +533,7 @@
           "hero": {
             "optional": true,
             "nullable": false,
-            "default": {
-              "type": "IMAGE"
-            },
+            "default": {},
             "type": "object",
             "oneOf": [],
             "notOneOf": [],
@@ -546,7 +542,6 @@
               "type": {
                 "optional": false,
                 "nullable": false,
-                "default": "IMAGE",
                 "type": "string",
                 "oneOf": [
                   "IMAGE",
@@ -770,7 +765,7 @@
         "id": {
           "optional": false,
           "nullable": false,
-          "default": "ccbedc6f-d9fc-491a-bfdf-0309fb4c753c",
+          "default": "4347f437-b470-494a-8c52-7f96e72977fe",
           "type": "string",
           "oneOf": [],
           "notOneOf": [],
@@ -803,7 +798,7 @@
           "innerType": {
             "optional": false,
             "nullable": false,
-            "default": "ef718beb-1d65-4606-8063-da74334685dc",
+            "default": "6ebaf35b-8605-49ee-8181-2abf034d4ec8",
             "type": "string",
             "oneOf": [],
             "notOneOf": [],
@@ -1013,8 +1008,8 @@
           "optional": false,
           "nullable": false,
           "default": [
-            "2024-11-15T08:37:57.204Z",
-            "2024-11-18T08:37:57.204Z"
+            "2024-11-15T13:57:59.287Z",
+            "2024-11-18T13:57:59.287Z"
           ],
           "type": "tuple",
           "oneOf": [],
@@ -1025,7 +1020,7 @@
               "label": "from",
               "optional": false,
               "nullable": false,
-              "default": "2024-11-15T08:37:57.204Z",
+              "default": "2024-11-15T13:57:59.287Z",
               "type": "string",
               "oneOf": [],
               "notOneOf": [],
@@ -1053,7 +1048,7 @@
               "label": "to",
               "optional": false,
               "nullable": false,
-              "default": "2024-11-15T08:37:57.204Z",
+              "default": "2024-11-15T13:57:59.287Z",
               "type": "string",
               "oneOf": [],
               "notOneOf": [],
@@ -1115,10 +1110,8 @@
             "optional": false,
             "nullable": false,
             "default": {
-              "hero": {
-                "type": "IMAGE"
-              },
-              "id": "4c8d8d6b-3b7d-4e60-990f-f46c6c02a408",
+              "hero": {},
+              "id": "a4e0b04e-c4a1-4225-a9f4-305e2f7bf88e",
               "iconSize": 48
             },
             "type": "object",
@@ -1160,7 +1153,7 @@
               "id": {
                 "optional": false,
                 "nullable": false,
-                "default": "65d49fe7-0113-4460-9a03-8f9de86744b3",
+                "default": "7cfc0741-2a67-446a-aef4-cd54d90fac31",
                 "type": "string",
                 "oneOf": [],
                 "notOneOf": [],
@@ -1275,9 +1268,7 @@
               "hero": {
                 "optional": true,
                 "nullable": false,
-                "default": {
-                  "type": "IMAGE"
-                },
+                "default": {},
                 "type": "object",
                 "oneOf": [],
                 "notOneOf": [],
@@ -1286,7 +1277,6 @@
                   "type": {
                     "optional": false,
                     "nullable": false,
-                    "default": "IMAGE",
                     "type": "string",
                     "oneOf": [
                       "IMAGE",
@@ -1511,10 +1501,8 @@
   "optional": false,
   "nullable": false,
   "default": {
-    "hero": {
-      "type": "IMAGE"
-    },
-    "id": "d56daef1-42b2-4b4b-b649-4e06805bb341",
+    "hero": {},
+    "id": "802162d5-3a85-4047-a5d2-78c5cd84906b",
     "iconSize": 48
   },
   "type": "object",
@@ -1556,7 +1544,7 @@
     "id": {
       "optional": false,
       "nullable": false,
-      "default": "41941789-3cc5-4e60-8789-bafbfa4fb0cb",
+      "default": "7b1ee0ba-0ad8-4a56-aa21-d881c930ae4f",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -1671,9 +1659,7 @@
     "hero": {
       "optional": true,
       "nullable": false,
-      "default": {
-        "type": "IMAGE"
-      },
+      "default": {},
       "type": "object",
       "oneOf": [],
       "notOneOf": [],
@@ -1682,7 +1668,6 @@
         "type": {
           "optional": false,
           "nullable": false,
-          "default": "IMAGE",
           "type": "string",
           "oneOf": [
             "IMAGE",
@@ -1928,7 +1913,7 @@
 {
   "optional": false,
   "nullable": false,
-  "default": "2024-11-15T08:37:57.205Z",
+  "default": "2024-11-15T13:57:59.288Z",
   "type": "string",
   "oneOf": [],
   "notOneOf": [],
@@ -1960,8 +1945,8 @@
   "optional": false,
   "nullable": false,
   "default": [
-    "2024-11-15T08:37:57.206Z",
-    "2024-11-18T08:37:57.206Z"
+    "2024-11-15T13:57:59.288Z",
+    "2024-11-18T13:57:59.288Z"
   ],
   "type": "tuple",
   "oneOf": [],
@@ -1972,7 +1957,7 @@
       "label": "from",
       "optional": false,
       "nullable": false,
-      "default": "2024-11-15T08:37:57.206Z",
+      "default": "2024-11-15T13:57:59.288Z",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -2000,7 +1985,7 @@
       "label": "to",
       "optional": false,
       "nullable": false,
-      "default": "2024-11-15T08:37:57.206Z",
+      "default": "2024-11-15T13:57:59.288Z",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],
@@ -2031,11 +2016,9 @@
 ### hero
 ```json
 {
-  "optional": false,
+  "optional": true,
   "nullable": false,
-  "default": {
-    "type": "IMAGE"
-  },
+  "default": {},
   "type": "object",
   "oneOf": [],
   "notOneOf": [],
@@ -2044,7 +2027,6 @@
     "type": {
       "optional": false,
       "nullable": false,
-      "default": "IMAGE",
       "type": "string",
       "oneOf": [
         "IMAGE",
@@ -2084,7 +2066,7 @@
 {
   "optional": false,
   "nullable": false,
-  "default": "812a6c3d-c9f8-4031-8ebc-7072a3fc438f",
+  "default": "3f1dafa5-6d01-4df6-ac3d-6eb78ce75606",
   "type": "string",
   "oneOf": [],
   "notOneOf": [],
@@ -2156,7 +2138,7 @@
   "optional": false,
   "nullable": false,
   "default": {
-    "id": "4b1df7e8-7e49-4962-9305-e66daeae5027"
+    "id": "1108c4aa-381a-4239-a91a-6756fcac90f8"
   },
   "type": "object",
   "oneOf": [],
@@ -2166,7 +2148,7 @@
     "id": {
       "optional": false,
       "nullable": false,
-      "default": "395f9e0f-fa7c-474b-a2aa-602cd842d46e",
+      "default": "aa5d309f-94c0-4c1a-83a8-3838434e48b9",
       "type": "string",
       "oneOf": [],
       "notOneOf": [],

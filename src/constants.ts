@@ -1,4 +1,7 @@
-export const HERO_TYPES = ['IMAGE', 'YOUTUBE'] as const
+export enum HeroType {
+  IMAGE = 'IMAGE',
+  YOUTUBE = 'YOUTUBE',
+}
 
 export enum IconSize {
   SMALL = 32,
