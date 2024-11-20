@@ -39,11 +39,12 @@ for (const v of ['gray ', 'rgba(255, 255, 256)'])
     errors: ['this is not a valid color'],
   })
 
-const EVE = 'eve'
 const EVE_ADMINS = [myUuid]
+
 const minimalistEvent = mapifestEvent.cast({
-  name: EVE,
+  name: 'eve',
   adminIds: EVE_ADMINS,
+  appIconUrl: 'https://placehold.co/512x512.png',
   userIcon: {
     iconUrl: defaults.userIcon,
     iconSize: IconSize.MEDIUM,
@@ -54,7 +55,7 @@ const minimalistEvent = mapifestEvent.cast({
     [58.95184, 26.383367],
   ],
 })
-assert.equal(minimalistEvent.name, EVE)
+assert.equal(minimalistEvent.name, 'eve')
 assert.equal(minimalistEvent.adminIds, EVE_ADMINS)
 
 console.log(JSON.stringify(minimalistEvent, null, 2))

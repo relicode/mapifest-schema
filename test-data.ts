@@ -1,3 +1,4 @@
+import { HeroType, IconSize } from './src/constants'
 import type { Schemas } from './src/index'
 
 const LOREM_IPSUM = `
@@ -12,6 +13,8 @@ Donec varius ipsum eget mi iaculis, ut venenatis ligula sodales. In consequat si
 Morbi nulla dolor, egestas vel orci vitae, ornare dapibus urna. Fusce lobortis purus nibh, sit amet euismod massa interdum sed. Morbi ut facilisis mauris. Suspendisse a dignissim enim, id pulvinar magna. Nunc vitae vulputate magna. Donec sodales felis et imperdiet varius. Proin et tortor ipsum. Ut mi justo, ullamcorper quis gravida sed, aliquam sit amet eros. Maecenas luctus nec mauris blandit porttitor. Sed in faucibus velit. Donec sit amet sagittis lorem. Duis fringilla libero vitae pellentesque eleifend.
 `.trim()
 
+const RICH_IPSUM = LOREM_IPSUM.replace(/Lorem/g, '**Lorem**')
+
 type MapifestEvent = Schemas['MapifestEvent']
 
 export const validEvent: MapifestEvent = {
@@ -24,7 +27,12 @@ export const validEvent: MapifestEvent = {
   themeColor: 'white',
   adminIds: ['ddbfa239-326c-4a43-9231-7846e74a03e7', '275ef75f-d342-4919-a8d3-2470c987cf91'],
   description: LOREM_IPSUM,
-  userIcon: { iconUrl: 'http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg', iconSize: 32 },
+  descriptionRichText: RICH_IPSUM,
+  appIconUrl: 'https://placehold.co/512x512.png',
+  userIcon: {
+    iconUrl: 'http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg',
+    iconSize: IconSize.MEDIUM,
+  },
   bounds: [
     [58.95132, 26.37354],
     [58.95603, 26.38439],
@@ -40,11 +48,11 @@ export const validEvent: MapifestEvent = {
       id: '61be260b-a6fc-4fe8-bcf4-4119d4e2ab73',
       title: 'POI title',
       iconUrl: 'http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg',
-      iconSize: 32,
+      iconSize: IconSize.MEDIUM,
       description: 'POI description',
       coordinates: [58.95402210698978, 26.37804676080017],
       hero: {
-        type: 'IMAGE',
+        type: HeroType.IMAGE,
         url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Cumulus_Clouds_over_Yellow_Prairie2.jpg/1920px-Cumulus_Clouds_over_Yellow_Prairie2.jpg',
       },
     },

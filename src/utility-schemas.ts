@@ -1,5 +1,5 @@
 import { number, object, string, tuple } from 'yup'
-import { IconSize, ICON_SIZES, HeroType } from './constants.js'
+import { defaults, ICON_SIZES, HeroType } from './constants.js'
 
 export const coordinates = tuple([
   number().min(-90).max(90).required().label('latitude'),
@@ -40,7 +40,7 @@ export const objectWithId = object({
 
 export const objectWithIcon = object({
   iconUrl: string().url().required(),
-  iconSize: number().oneOf(ICON_SIZES).default(IconSize.MEDIUM).required(),
+  iconSize: number().oneOf(ICON_SIZES).default(defaults.iconSize).required(),
 }).required()
 
 export const hero = object({
