@@ -13,7 +13,7 @@ export const poi = object({
   .concat(objectWithIcon)
   .required()
 
-const mapifestEventBase = object({
+export const mapifestEvent = object({
   adminIds: array().of(id).min(1).required(),
   bounds: bounds.required(),
   center: coordinates.required(),
@@ -27,15 +27,9 @@ const mapifestEventBase = object({
     .matches(/.+\.png$/, 'appIconUrl needs to end with .png')
     .required(),
   userIcon: objectWithIcon.required(),
-  shortName: string().max(32),
+  shortName: string().max(32).required(),
   themeColor: color.default(defaults.themeColor).required(),
   tiles: array().of(tile).default([]).required(),
   tileSchema: string().default(defaults.tileSchema).required(),
   attribution: string().default(defaults.attribution).required(),
 }).concat(objectWithId)
-
-export const mapifestEvent = object({
-  preview: mapifestEventBase.optional().default(undefined),
-})
-  .concat(mapifestEventBase)
-  .required()

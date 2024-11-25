@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 
 import { mapifestEvent } from './src/schemas'
-import { color, datetime } from './src/utility-schemas'
+import { color, datetime, id } from './src/utility-schemas'
 import { baseValidationError } from './src/utils'
 import { defaults, IconSize } from './src/constants'
 import { invalidEvents, validEvent } from './test-data'
@@ -40,11 +40,20 @@ for (const v of ['gray ', 'rgba(255, 255, 256)'])
   })
 
 const EVE_ADMINS = [myUuid]
+const EVE_NAME = 'minimalist event'
+
+const startDate = new Date()
+const endDate = new Date(startDate)
+endDate.setDate(endDate.getDate() + 3) // Three days from startDate
+const fromTo = [startDate, endDate].map((date) => date.toISOString())
 
 const minimalistEvent = mapifestEvent.cast({
-  name: 'eve',
+  id: crypto.randomUUID(),
+  name: EVE_NAME,
+  shortName: EVE_NAME.slice(0, 3),
   adminIds: EVE_ADMINS,
   appIconUrl: 'https://placehold.co/512x512.png',
+  fromTo,
   userIcon: {
     iconUrl: defaults.userIcon,
     iconSize: IconSize.MEDIUM,
@@ -55,7 +64,19 @@ const minimalistEvent = mapifestEvent.cast({
     [58.95184, 26.383367],
   ],
 })
-assert.equal(minimalistEvent.name, 'eve')
+assert.equal(minimalistEvent.name, EVE_NAME)
 assert.equal(minimalistEvent.adminIds, EVE_ADMINS)
+
+const mapifestEventWithOptionalId = mapifestEvent.shape({
+  id: id.optional(),
+})
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const trimId = <T extends Record<'id', string>>({ id, ...rest }: T) => ({ ...rest })
+
+const trimmed = trimId(minimalistEvent)
+
+assert.rejects(mapifestEvent.validate(trimmed))
+assert.doesNotReject(mapifestEventWithOptionalId.validate(trimmed))
 
 console.log(JSON.stringify(minimalistEvent, null, 2))
