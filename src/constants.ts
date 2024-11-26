@@ -24,7 +24,7 @@ export const defaults = {
   ],
   themeColor: '#eef0d5', // ~beige
   tileSchema: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
-  userIcon: 'http://127.0.0.1:3000/marker-icons/854902-navigation-maps/049-placeholder.svg',
+  userIcon: 'https://dev.sallamois.online:3000/s3/marker-icons-v0/000001_854902-navigation-maps/043-street-view.svg',
 } as const
 
 export const colorLiterals = [
